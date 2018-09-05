@@ -144,6 +144,7 @@
     <ClInclude Include="IProjector.h" />
     <ClInclude Include="IStroke.h" />
     <ClInclude Include="Layer.h" />
+    <ClInclude Include="LineIterator.h" />
     <ClInclude Include="MandelbrotFractalBitmapIterator.h" />
     <ClInclude Include="MandelbrotFractalDecoder.h" />
     <ClInclude Include="narrow_cast.h" />
@@ -152,6 +153,7 @@
     <ClInclude Include="ranged_number.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SizedWord.h" />
+    <ClInclude Include="SquareStroke.h" />
     <ClInclude Include="Test.h" />
     <ClInclude Include="TestHarness.h" />
     <ClInclude Include="TestRegistry.h" />

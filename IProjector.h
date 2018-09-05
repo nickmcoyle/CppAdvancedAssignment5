@@ -2,6 +2,7 @@
 
 namespace BitmapGraphics
 {    
+	
     class IProjector
     {
     public:

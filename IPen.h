@@ -1,9 +1,14 @@
 #pragma once
 
 #include "VectorGraphic.h"
+#include "Point.h"
+#include <memory>
 
 namespace BitmapGraphics
 {    
+	class IPen;
+	using HPen = std::shared_ptr<IPen>;	
+
     class IPen
     {
     public:
@@ -15,6 +20,6 @@ namespace BitmapGraphics
 		IPen(IPen&&) = delete;
 		IPen& operator=(IPen&&) = delete;		
     	
-		virtual void drawPoint(const HCanvas&, const Point&) = 0;		
+		virtual void drawPoint(VG::Point const& point) = 0;
     };
 }

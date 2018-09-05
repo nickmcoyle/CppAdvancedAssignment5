@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Point.h"
+#include "ICanvas.h"
 #include <vector>
 
 namespace VG
@@ -22,6 +23,8 @@ namespace VG
 		{
 			myPath.emplace_back(std::forward<C>(p));
 		}
+
+		void draw(const Point& upperLeftOrigin, const BitmapGraphics::HCanvas& canvas);
 
         void removePoint(const Point& p);
         void erasePoint(int index);
