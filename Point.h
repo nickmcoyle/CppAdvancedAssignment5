@@ -1,5 +1,6 @@
 #pragma once
 
+#include <utility>
 #include <iosfwd>
 
 namespace VG
@@ -14,6 +15,12 @@ namespace VG
 
 		Point & operator=(const Point&) = default;
 		Point & operator=(Point&&) = default;
+
+		bool operator==(const Point& rhs);
+		bool operator!=(const Point& rhs);
+
+		bool operator<(const Point& rhs);
+		bool operator>(const Point& rhs);		
         
         constexpr int getX() const { return myX; }
         constexpr int getY() const { return myY; }
@@ -22,9 +29,12 @@ namespace VG
 		int myX{ 0 };
 		int myY{ 0 };
     };
-    
+
     bool operator==(const Point& lhs, const Point& rhs);
     bool operator!=(const Point& lhs, const Point& rhs);
-    
+
+	bool operator<(const Point& lhs, const Point& rhs);
+	bool operator>(const Point& lhs, const Point& rhs);
+
     std::ostream& operator<<(std::ostream& os, const Point& p);
 }

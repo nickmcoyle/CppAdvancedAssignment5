@@ -1,4 +1,5 @@
 #include "XmlReader.h"
+#include "XmlInterfaces.h"
 #include "VectorGraphic.h"
 #include "TestHarness.h"
 
@@ -35,7 +36,7 @@ TEST(loadXml, XmlReader)
 {
     std::stringstream xmlStream(SceneXml);
 
-    Xml::HElement root = Xml::Reader::loadXml(xmlStream);
+    Xml::HElement root = Xml::TinyReader::loadXml(xmlStream);
 
     CHECK_EQUAL("Scene", root->getName());
     CHECK_EQUAL("800", root->getAttribute("width"));
@@ -48,7 +49,7 @@ TEST(loadXml, XmlReader)
     CHECK_EQUAL("800", attributes["width"])
     CHECK_EQUAL("600", attributes["height"])
 
-    Xml::ElementList children = root->getChildElements();
+    Xml::ElementCollection children = root->getChildElements();
     CHECK(!children.empty());
     CHECK_EQUAL(2, children.size());
 
@@ -59,7 +60,7 @@ TEST(loadXml, XmlReader)
     CHECK_EQUAL(1, attributes.size());
     CHECK_EQUAL("sky", layer0->getAttribute("alias"));
 
-    Xml::ElementList layerChildren = layer0->getChildElements();
+    Xml::ElementCollection layerChildren = layer0->getChildElements();
     CHECK(!layerChildren.empty());
     CHECK_EQUAL(2, layerChildren.size());
     Xml::HElement placedGraphic = layerChildren[0];

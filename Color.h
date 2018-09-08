@@ -11,6 +11,8 @@ namespace BitmapGraphics
             const Binary::Byte& red = 0_byte,
             const Binary::Byte& green = 0_byte,
             const Binary::Byte& blue = 0_byte) noexcept;
+
+		Color(int red, int green, int blue) noexcept;
 		
 		Color(const Color&) noexcept = default;
 		Color(Color &&) noexcept = default;

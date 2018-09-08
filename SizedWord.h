@@ -1,4 +1,5 @@
 #pragma once
+
 #include <type_traits>
 #include <iterator>
 
@@ -91,7 +92,10 @@ namespace Binary
         bool operator==(const SizedWord& rhs) const noexcept { return myData == rhs.myData; }
         bool operator!=(const SizedWord& rhs) const noexcept { return !(operator==(rhs)); }
 
-        operator WordSize() const { return myData; }
+        operator WordSize() const { return myData; }		
+		operator int() const { return myData; }
+	
+		SizedWord& operator=(unsigned char other) { this->myData = other; return *this; };
 
         friend std::ostream& operator<<(std::ostream& os, const SizedWord& word)
         {

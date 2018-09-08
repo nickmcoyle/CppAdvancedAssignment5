@@ -27,6 +27,8 @@ namespace Framework
 			myGraphics.push_back(std::forward<C>(placedGraphic));
 		}
 
+		void draw(const BitmapGraphics::HCanvas& canvas);
+
         void remove(const PlacedGraphic& placedGraphic);
         PlacedGraphicIterator begin() const;
         PlacedGraphicIterator end() const;

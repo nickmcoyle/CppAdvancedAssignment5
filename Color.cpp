@@ -12,6 +12,14 @@ namespace BitmapGraphics
         myBlue{ blue }
     {
     }
+		
+		
+	Color::Color(int red, int green, int blue) noexcept :
+	myRed(red),
+	myGreen(green),
+	myBlue(blue)
+	{
+	};
 
     Color Color::read(std::istream& sourceStream)
     {

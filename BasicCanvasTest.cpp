@@ -1,6 +1,6 @@
 #include "TestHarness.h"
-
 #include "BasicCanvas.h"
+#include <iostream>
 
 using namespace BitmapGraphics;
 

@@ -2,6 +2,8 @@
 
 #include "Point.h"
 #include "Color.h"
+#include "IBitmapIterator.h"
+#include <memory>
 
 namespace BitmapGraphics
 {   

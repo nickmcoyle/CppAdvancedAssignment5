@@ -1,0 +1,278 @@
+﻿  BasicCanvasTest.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(9): error C2664: 'BitmapGraphics::Color::Color(BitmapGraphics::Color &&) noexcept': cannot convert argument 1 from 'int' to 'const Binary::Byte &'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(9): note: Reason: cannot convert from 'int' to 'const Binary::Byte'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(9): note: Constructor for class 'Binary::SizedWord<uint8_t>' is declared 'explicit'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(10): error C2259: 'BitmapGraphics::BasicCanvas': cannot instantiate abstract class
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(10): note: due to following members:
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(10): note: 'void BitmapGraphics::ICanvas::setPixelColor(const VG::Point &,const BitmapGraphics::Color &)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(24): note: see declaration of 'BitmapGraphics::ICanvas::setPixelColor'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(10): note: 'BitmapGraphics::Color BitmapGraphics::ICanvas::getPixelColor(const VG::Point &) const': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(25): note: see declaration of 'BitmapGraphics::ICanvas::getPixelColor'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(10): note: 'BitmapGraphics::HBitmapIterator BitmapGraphics::ICanvas::createBitmapIterator(void)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(29): note: see declaration of 'BitmapGraphics::ICanvas::createBitmapIterator'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(10): error C2661: 'BitmapGraphics::BasicCanvas::BasicCanvas': no overloaded function takes 3 arguments
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(19): error C2664: 'BitmapGraphics::Color::Color(BitmapGraphics::Color &&) noexcept': cannot convert argument 1 from 'int' to 'const Binary::Byte &'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(19): note: Reason: cannot convert from 'int' to 'const Binary::Byte'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(19): note: Constructor for class 'Binary::SizedWord<uint8_t>' is declared 'explicit'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(20): error C2259: 'BitmapGraphics::BasicCanvas': cannot instantiate abstract class
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(20): note: due to following members:
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(20): note: 'void BitmapGraphics::ICanvas::setPixelColor(const VG::Point &,const BitmapGraphics::Color &)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(24): note: see declaration of 'BitmapGraphics::ICanvas::setPixelColor'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(20): note: 'BitmapGraphics::Color BitmapGraphics::ICanvas::getPixelColor(const VG::Point &) const': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(25): note: see declaration of 'BitmapGraphics::ICanvas::getPixelColor'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(20): note: 'BitmapGraphics::HBitmapIterator BitmapGraphics::ICanvas::createBitmapIterator(void)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(29): note: see declaration of 'BitmapGraphics::ICanvas::createBitmapIterator'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(20): error C2661: 'BitmapGraphics::BasicCanvas::BasicCanvas': no overloaded function takes 3 arguments
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(22): error C2664: 'BitmapGraphics::Color::Color(BitmapGraphics::Color &&) noexcept': cannot convert argument 1 from 'int' to 'const Binary::Byte &'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(22): note: Reason: cannot convert from 'int' to 'const Binary::Byte'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(22): note: Constructor for class 'Binary::SizedWord<uint8_t>' is declared 'explicit'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(31): error C2664: 'BitmapGraphics::Color::Color(BitmapGraphics::Color &&) noexcept': cannot convert argument 1 from 'int' to 'const Binary::Byte &'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(31): note: Reason: cannot convert from 'int' to 'const Binary::Byte'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(31): note: Constructor for class 'Binary::SizedWord<uint8_t>' is declared 'explicit'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(32): error C2259: 'BitmapGraphics::BasicCanvas': cannot instantiate abstract class
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(32): note: due to following members:
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(32): note: 'void BitmapGraphics::ICanvas::setPixelColor(const VG::Point &,const BitmapGraphics::Color &)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(24): note: see declaration of 'BitmapGraphics::ICanvas::setPixelColor'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(32): note: 'BitmapGraphics::Color BitmapGraphics::ICanvas::getPixelColor(const VG::Point &) const': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(25): note: see declaration of 'BitmapGraphics::ICanvas::getPixelColor'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(32): note: 'BitmapGraphics::HBitmapIterator BitmapGraphics::ICanvas::createBitmapIterator(void)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(29): note: see declaration of 'BitmapGraphics::ICanvas::createBitmapIterator'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(32): error C2661: 'BitmapGraphics::BasicCanvas::BasicCanvas': no overloaded function takes 3 arguments
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(34): error C2664: 'BitmapGraphics::Color::Color(BitmapGraphics::Color &&) noexcept': cannot convert argument 1 from 'int' to 'const Binary::Byte &'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(34): note: Reason: cannot convert from 'int' to 'const Binary::Byte'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(34): note: Constructor for class 'Binary::SizedWord<uint8_t>' is declared 'explicit'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(43): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'BitmapGraphics::Color'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(43): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(43): error C2259: 'BitmapGraphics::BasicCanvas': cannot instantiate abstract class
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(43): note: due to following members:
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(43): note: 'void BitmapGraphics::ICanvas::setPixelColor(const VG::Point &,const BitmapGraphics::Color &)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(24): note: see declaration of 'BitmapGraphics::ICanvas::setPixelColor'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(43): note: 'BitmapGraphics::Color BitmapGraphics::ICanvas::getPixelColor(const VG::Point &) const': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(25): note: see declaration of 'BitmapGraphics::ICanvas::getPixelColor'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(43): note: 'BitmapGraphics::HBitmapIterator BitmapGraphics::ICanvas::createBitmapIterator(void)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(29): note: see declaration of 'BitmapGraphics::ICanvas::createBitmapIterator'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(51): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'BitmapGraphics::Color'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(51): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(51): error C2259: 'BitmapGraphics::BasicCanvas': cannot instantiate abstract class
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(51): note: due to following members:
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(51): note: 'void BitmapGraphics::ICanvas::setPixelColor(const VG::Point &,const BitmapGraphics::Color &)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(24): note: see declaration of 'BitmapGraphics::ICanvas::setPixelColor'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(51): note: 'BitmapGraphics::Color BitmapGraphics::ICanvas::getPixelColor(const VG::Point &) const': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(25): note: see declaration of 'BitmapGraphics::ICanvas::getPixelColor'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(51): note: 'BitmapGraphics::HBitmapIterator BitmapGraphics::ICanvas::createBitmapIterator(void)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(29): note: see declaration of 'BitmapGraphics::ICanvas::createBitmapIterator'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(55): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'BitmapGraphics::Color'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(55): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(55): error C2660: 'BitmapGraphics::ICanvas::setPixelColor': function does not take 1 arguments
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(60): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\map(19): note: see declaration of 'std'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(60): error C2065: 'cout': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(67): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'BitmapGraphics::Color'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(67): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(67): error C2259: 'BitmapGraphics::BasicCanvas': cannot instantiate abstract class
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(67): note: due to following members:
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(67): note: 'void BitmapGraphics::ICanvas::setPixelColor(const VG::Point &,const BitmapGraphics::Color &)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(24): note: see declaration of 'BitmapGraphics::ICanvas::setPixelColor'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(67): note: 'BitmapGraphics::Color BitmapGraphics::ICanvas::getPixelColor(const VG::Point &) const': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(25): note: see declaration of 'BitmapGraphics::ICanvas::getPixelColor'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(67): note: 'BitmapGraphics::HBitmapIterator BitmapGraphics::ICanvas::createBitmapIterator(void)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(29): note: see declaration of 'BitmapGraphics::ICanvas::createBitmapIterator'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(75): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\map(19): note: see declaration of 'std'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(75): error C2065: 'cout': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(82): error C2664: 'BitmapGraphics::Color::Color(BitmapGraphics::Color &&) noexcept': cannot convert argument 1 from 'int' to 'const Binary::Byte &'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(82): note: Reason: cannot convert from 'int' to 'const Binary::Byte'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(82): note: Constructor for class 'Binary::SizedWord<uint8_t>' is declared 'explicit'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(83): error C2259: 'BitmapGraphics::BasicCanvas': cannot instantiate abstract class
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(83): note: due to following members:
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(83): note: 'void BitmapGraphics::ICanvas::setPixelColor(const VG::Point &,const BitmapGraphics::Color &)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(24): note: see declaration of 'BitmapGraphics::ICanvas::setPixelColor'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(83): note: 'BitmapGraphics::Color BitmapGraphics::ICanvas::getPixelColor(const VG::Point &) const': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(25): note: see declaration of 'BitmapGraphics::ICanvas::getPixelColor'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(83): note: 'BitmapGraphics::HBitmapIterator BitmapGraphics::ICanvas::createBitmapIterator(void)': is abstract
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\icanvas.h(29): note: see declaration of 'BitmapGraphics::ICanvas::createBitmapIterator'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\basiccanvastest.cpp(83): error C2661: 'BitmapGraphics::BasicCanvas::BasicCanvas': no overloaded function takes 3 arguments
+  BinaryTest.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\binarytest.cpp(35): error C2679: binary '=': no operator found which takes a right-hand operand of type 'unsigned char' (or there is no acceptable conversion)
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\sizedword.h(17): note: could be 'Binary::SizedWord<uint8_t> &Binary::SizedWord<uint8_t>::operator =(Binary::SizedWord<uint8_t> &&)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\sizedword.h(16): note: or       'Binary::SizedWord<uint8_t> &Binary::SizedWord<uint8_t>::operator =(const Binary::SizedWord<uint8_t> &)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\binarytest.cpp(35): note: while trying to match the argument list '(Binary::Byte, unsigned char)'
+  Bitmap.cpp
+  BitmapIterator.cpp
+  BitmapIteratorDecorator.cpp
+  BrightnessDecorator.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\ranged_number.h(95): error C2039: 'clamp': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\algorithm(14): note: see declaration of 'std'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\ranged_number.h(94): note: while compiling class template member function 'int ranged_number<int,0,255>::Clamp<0,255>::operator ()(T) const'
+          with
+          [
+              T=int
+          ]
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\ranged_number.h(13): note: see reference to function template instantiation 'int ranged_number<int,0,255>::Clamp<0,255>::operator ()(T) const' being compiled
+          with
+          [
+              T=int
+          ]
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\ranged_number.h(99): note: see reference to class template instantiation 'ranged_number<int,0,255>::Clamp<0,255>' being compiled
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\brightnessdecorator.cpp(33): note: see reference to class template instantiation 'ranged_number<int,0,255>' being compiled
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\ranged_number.h(95): error C3861: 'clamp': identifier not found
+  CodecLibrary.cpp
+  CodecLibraryTest.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(23): error C2664: 'void BitmapGraphics::CodecLibrary::registerEncoder(BitmapGraphics::HBitmapEncoder)': cannot convert argument 1 from 'std::shared_ptr<BitmapGraphics::WindowsBitmapEncoder>' to 'BitmapGraphics::HBitmapEncoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(23): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(24): error C2664: 'void BitmapGraphics::CodecLibrary::registerDecoder(BitmapGraphics::HBitmapDecoder)': cannot convert argument 1 from 'std::shared_ptr<BitmapGraphics::WindowsBitmapDecoder>' to 'BitmapGraphics::HBitmapDecoder'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(24): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(35): error C2440: 'initializing': cannot convert from 'std::shared_ptr<BitmapGraphics::WindowsBitmapDecoder>' to 'std::unique_ptr<BitmapGraphics::IBitmapDecoder,std::default_delete<_Ty>>'
+          with
+          [
+              _Ty=BitmapGraphics::IBitmapDecoder
+          ]
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(35): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(44): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\fstream(14): note: see declaration of 'std'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(44): error C2065: 'cout': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(51): error C2440: 'initializing': cannot convert from 'std::shared_ptr<BitmapGraphics::WindowsBitmapEncoder>' to 'std::unique_ptr<BitmapGraphics::IBitmapEncoder,std::default_delete<_Ty>>'
+          with
+          [
+              _Ty=BitmapGraphics::IBitmapEncoder
+          ]
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(51): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(60): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\fstream(14): note: see declaration of 'std'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(60): error C2065: 'cout': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(92): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\fstream(14): note: see declaration of 'std'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(92): error C2065: 'cout': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(124): error C2039: 'cout': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\fstream(14): note: see declaration of 'std'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(124): error C2065: 'cout': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(182): error C2440: 'initializing': cannot convert from 'std::shared_ptr<BitmapGraphics::BrightnessDecorator>' to 'std::unique_ptr<BitmapGraphics::IBitmapIterator,std::default_delete<_Ty>>'
+          with
+          [
+              _Ty=BitmapGraphics::IBitmapIterator
+          ]
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(182): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(206): error C2440: 'initializing': cannot convert from 'std::shared_ptr<BitmapGraphics::ColorInversionDecorator>' to 'std::unique_ptr<BitmapGraphics::IBitmapIterator,std::default_delete<_Ty>>'
+          with
+          [
+              _Ty=BitmapGraphics::IBitmapIterator
+          ]
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(206): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(230): error C2440: 'initializing': cannot convert from 'std::shared_ptr<BitmapGraphics::ColorInversionDecorator>' to 'std::unique_ptr<BitmapGraphics::IBitmapIterator,std::default_delete<_Ty>>'
+          with
+          [
+              _Ty=BitmapGraphics::IBitmapIterator
+          ]
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(230): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(231): error C2440: 'initializing': cannot convert from 'std::shared_ptr<BitmapGraphics::BrightnessDecorator>' to 'std::unique_ptr<BitmapGraphics::IBitmapIterator,std::default_delete<_Ty>>'
+          with
+          [
+              _Ty=BitmapGraphics::IBitmapIterator
+          ]
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(231): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  Color.cpp
+  ColorInversionDecorator.cpp
+  Failure.cpp
+  Layer.cpp
+  LayerTest.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(9): error C2039: 'HVectorGraphic': is not a member of 'VG'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.h(7): note: see declaration of 'VG'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(9): error C3861: 'HVectorGraphic': identifier not found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(9): error C2672: 'Framework::Layer::pushBack': no matching overloaded function found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(10): error C2039: 'HVectorGraphic': is not a member of 'VG'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.h(7): note: see declaration of 'VG'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(10): error C3861: 'HVectorGraphic': identifier not found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(10): error C2672: 'Framework::Layer::pushBack': no matching overloaded function found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(11): error C2039: 'HVectorGraphic': is not a member of 'VG'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.h(7): note: see declaration of 'VG'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(11): error C3861: 'HVectorGraphic': identifier not found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(11): error C2672: 'Framework::Layer::pushBack': no matching overloaded function found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(35): error C2039: 'HVectorGraphic': is not a member of 'VG'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.h(7): note: see declaration of 'VG'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(35): error C3861: 'HVectorGraphic': identifier not found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(35): error C2672: 'Framework::Layer::pushBack': no matching overloaded function found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(36): error C2039: 'HVectorGraphic': is not a member of 'VG'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.h(7): note: see declaration of 'VG'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(36): error C3861: 'HVectorGraphic': identifier not found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(36): error C2672: 'Framework::Layer::pushBack': no matching overloaded function found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(37): error C2039: 'HVectorGraphic': is not a member of 'VG'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.h(7): note: see declaration of 'VG'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(37): error C3861: 'HVectorGraphic': identifier not found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(37): error C2672: 'Framework::Layer::pushBack': no matching overloaded function found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(39): error C2039: 'HVectorGraphic': is not a member of 'VG'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.h(7): note: see declaration of 'VG'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\layertest.cpp(39): error C3861: 'HVectorGraphic': identifier not found
+  Main.cpp
+  MandelbrotFractalBitmapIterator.cpp
+  MandlebrotFractalDecoder.cpp
+  PlacedGraphic.cpp
+  PlacedGraphicTest.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(7): error C2039: 'HVectorGraphic': is not a member of 'VG'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.h(7): note: see declaration of 'VG'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(7): error C2065: 'HVectorGraphic': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(7): error C2146: syntax error: missing ';' before identifier 'vg'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(7): error C3861: 'vg': identifier not found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(8): error C2065: 'vg': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(12): error C2065: 'vg': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(12): error C2228: left of '.get' must have class/struct/union
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(12): note: type is 'unknown-type'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(27): error C2039: 'HVectorGraphic': is not a member of 'VG'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.h(7): note: see declaration of 'VG'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(27): error C2065: 'HVectorGraphic': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(27): error C2146: syntax error: missing ';' before identifier 'vg'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(27): error C3861: 'vg': identifier not found
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(28): error C2065: 'vg': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(30): error C2065: 'vg': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(30): error C2228: left of '.get' must have class/struct/union
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\placedgraphictest.cpp(30): note: type is 'unknown-type'
+  Point.cpp
+  PointTest.cpp
+  Generating Code...
+  Compiling...
+  ranged_numberTest.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\ranged_number.h(67): error C4984: 'if constexpr' is a C++17 language extension
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\ranged_number.h(66): note: while compiling class template member function 'ranged_number<int,1,12> &ranged_number<int,1,12>::operator +=(const ranged_number<int,1,12> &)'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\ranged_numbertest.cpp(84): note: see reference to function template instantiation 'ranged_number<int,1,12> &ranged_number<int,1,12>::operator +=(const ranged_number<int,1,12> &)' being compiled
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\ranged_numbertest.cpp(71): note: see reference to class template instantiation 'ranged_number<int,1,12>' being compiled
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\ranged_number.h(95): error C2039: 'clamp': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\include\algorithm(14): note: see declaration of 'std'
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\ranged_number.h(94): note: while compiling class template member function 'int ranged_number<int,1,12>::Clamp<1,12>::operator ()(T) const'
+          with
+          [
+              T=int
+          ]
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\ranged_number.h(13): note: see reference to function template instantiation 'int ranged_number<int,1,12>::Clamp<1,12>::operator ()(T) const' being compiled
+          with
+          [
+              T=int
+          ]
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\ranged_number.h(99): note: see reference to class template instantiation 'ranged_number<int,1,12>::Clamp<1,12>' being compiled
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\ranged_number.h(95): error C3861: 'clamp': identifier not found
+  Scene.cpp
+  SceneReaderTest.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\scenereadertest.cpp(1): fatal error C1083: Cannot open include file: 'XmlReader.h': No such file or directory
+  SceneTest.cpp
+  Test.cpp
+  TestRegistry.cpp
+  TestResult.cpp
+  VectorGraphic.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.cpp(36): error C2429: language feature 'structured bindings' requires compiler flag '/std:c++17'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.cpp(39): error C2065: 'maxIt': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.cpp(39): error C2227: left of '->getX' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.cpp(39): note: type is 'unknown-type'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.cpp(39): error C2065: 'minIt': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.cpp(44): error C2429: language feature 'structured bindings' requires compiler flag '/std:c++17'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.cpp(47): error C2065: 'maxIt': undeclared identifier
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.cpp(47): error C2227: left of '->getY' must point to class/struct/union/generic type
+  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.cpp(47): note: type is 'unknown-type'
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphic.cpp(47): error C2065: 'minIt': undeclared identifier
+  VectorGraphicTest.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\vectorgraphictest.cpp(1): fatal error C1083: Cannot open include file: 'Parse.h': No such file or directory
+  VerifyEqualityTest.cpp
+  WindowsBitmapDecoder.cpp
+  WindowsBitmapEncoder.cpp
+  WindowsBitmapHeader.cpp
+  WindowsBitmapHeaderTest.cpp
+  XmlReaderTest.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\xmlreadertest.cpp(1): fatal error C1083: Cannot open include file: 'XmlReader.h': No such file or directory
+  Generating Code...

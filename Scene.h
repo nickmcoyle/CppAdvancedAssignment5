@@ -15,6 +15,8 @@ namespace Framework
         
         using LayerIterator = LayerCollection::const_iterator;
         
+		void draw(const BitmapGraphics::HCanvas& canvas);
+
         void pushBack(const Layer& layer);
         void remove(const Layer& layer);
         LayerIterator begin() const;
