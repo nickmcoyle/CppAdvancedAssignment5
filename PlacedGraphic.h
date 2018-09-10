@@ -10,7 +10,7 @@ namespace Framework
     {
     public:
         PlacedGraphic(const VG::Point& placement,
-                      const VG::VectorGraphic& graphic);
+                      const VG::HVectorGraphic graphic);
         
         PlacedGraphic();
 
@@ -18,19 +18,19 @@ namespace Framework
 		PlacedGraphic(PlacedGraphic&& other) = default;
 
 		PlacedGraphic & operator=(const PlacedGraphic&) = default;
-		PlacedGraphic & operator=(PlacedGraphic&&) = default;
+		PlacedGraphic & operator=(PlacedGraphic&&) = default;			
         
         void setPlacementPoint(const VG::Point& placement);
 		void setPlacementPoint(VG::Point&& placement);
 
         const VG::Point& getPlacementPoint() const;
         
-        void setGraphic(const VG::VectorGraphic& graphic);
-        const VG::VectorGraphic& getGraphic() const;
+        void setGraphic(const VG::HVectorGraphic graphic);
+        const VG::HVectorGraphic getGraphic() const;
         
     private:
         VG::Point myPlacementPoint;
-        VG::VectorGraphic myGraphic;
+        VG::HVectorGraphic myGraphic;
     };
     
     bool operator==(const PlacedGraphic& lhs, const PlacedGraphic& rhs);

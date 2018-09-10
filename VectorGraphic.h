@@ -3,11 +3,15 @@
 #include "Point.h"
 #include "ICanvas.h"
 #include <vector>
+#include <memory>
 
 namespace VG
-{
+{	
     using Points = std::vector<Point>;
-    
+	
+	class VectorGraphic;
+	using HVectorGraphic = std::shared_ptr<VectorGraphic>;
+
     class VectorGraphic
     {
     public:
@@ -19,12 +23,12 @@ namespace VG
 		VectorGraphic& operator=(const VectorGraphic&) = default;
 		VectorGraphic& operator=(VectorGraphic&&) = default;
 
+		void draw(const Point& upperLeftOrigin, const BitmapGraphics::HCanvas& canvas);
+
 		template<class C> void addPoint(C&& p)
 		{
 			myPath.emplace_back(std::forward<C>(p));
-		}
-
-		void draw(const Point& upperLeftOrigin, const BitmapGraphics::HCanvas& canvas);
+		}		
 
         void removePoint(const Point& p);
         void erasePoint(int index);
@@ -48,6 +52,5 @@ namespace VG
         Points myPath;
         
         enum class ShapeStyle { Open, Closed } myShapeStyle;
-    };
-    
+    };    	
 }

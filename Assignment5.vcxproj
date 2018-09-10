@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -152,6 +153,7 @@
     <ClInclude Include="Point.h" />
     <ClInclude Include="ranged_number.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneReader.h" />
     <ClInclude Include="SizedWord.h" />
     <ClInclude Include="SquareStroke.h" />
     <ClInclude Include="Test.h" />
@@ -172,6 +174,7 @@
     <ClInclude Include="XmlReader.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BasicCanvas.cpp" />
     <ClCompile Include="BasicCanvasTest.cpp" />
     <ClCompile Include="BinaryTest.cpp" />
     <ClCompile Include="Bitmap.cpp" />
@@ -195,6 +198,7 @@
     <ClCompile Include="PointTest.cpp" />
     <ClCompile Include="ranged_numberTest.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneReader.cpp" />
     <ClCompile Include="SceneReaderTest.cpp" />
     <ClCompile Include="SceneTest.cpp" />
     <ClCompile Include="Test.cpp" />

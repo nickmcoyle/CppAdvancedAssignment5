@@ -20,14 +20,14 @@ namespace Framework
 		Layer& operator=(const Layer&) = default;
 		Layer& operator=(Layer&&) = default;
         
+		void draw(const BitmapGraphics::HCanvas& canvas);
+
         using PlacedGraphicIterator = PlacedGraphicCollection::const_iterator;
         
         template<class C> void pushBack(C&& placedGraphic)		
 		{
 			myGraphics.push_back(std::forward<C>(placedGraphic));
-		}
-
-		void draw(const BitmapGraphics::HCanvas& canvas);
+		}	
 
         void remove(const PlacedGraphic& placedGraphic);
         PlacedGraphicIterator begin() const;

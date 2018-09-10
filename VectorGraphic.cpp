@@ -8,6 +8,10 @@ namespace VG
     myShapeStyle{ShapeStyle::Closed}
     {
     }
+
+	void VectorGraphic::draw(const Point& upperLeftOrigin, const BitmapGraphics::HCanvas& canvas)
+	{
+	}
     
     bool VectorGraphic::isOpen() const
     {
@@ -90,5 +94,5 @@ namespace VG
     bool VectorGraphic::operator!=(const VectorGraphic& rhs) const
     {
         return ! (*this == rhs);
-    }
+    }	
 }

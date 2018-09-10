@@ -8,6 +8,10 @@ namespace Framework
     myHeight{height}
     {
     }
+
+	void Scene::draw(const BitmapGraphics::HCanvas& canvas)
+	{
+	}
     
     void Scene::pushBack(const Layer& layer)
     {

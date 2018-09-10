@@ -2,7 +2,9 @@
 
 namespace BitmapGraphics
 {    
-	
+	class IProjector;
+	using HProjector = std::shared_ptr<IProjector>;
+
     class IProjector
     {
     public:

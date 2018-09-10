@@ -15,13 +15,7 @@ namespace VG
 
 		Point & operator=(const Point&) = default;
 		Point & operator=(Point&&) = default;
-
-		bool operator==(const Point& rhs);
-		bool operator!=(const Point& rhs);
-
-		bool operator<(const Point& rhs);
-		bool operator>(const Point& rhs);		
-        
+				        
         constexpr int getX() const { return myX; }
         constexpr int getY() const { return myY; }
         

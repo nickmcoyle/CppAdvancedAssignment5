@@ -3,6 +3,8 @@
 #include "ICanvas.h"
 #include "Point.h"
 #include "Color.h"
+#include "Bitmap.h"
+#include "BitmapIterator.h"
 #include <list>
 #include <map>
 
@@ -13,7 +15,7 @@ namespace BitmapGraphics
 	public:
 		BasicCanvas() = default;
 		//BasicCanvas(int width, int height) : myWidth{width}, myHeight{height} { }
-		BasicCanvas(int width, int height, Color bgColor = Color{ Binary::Byte(255),Binary::Byte(255),Binary::Byte(255) }) : myWidth{ width }, myHeight{ height }, backgroundColor{ bgColor } { }
+		BasicCanvas(int width, int height, Color bgColor = Color{ Binary::Byte(255),Binary::Byte(255),Binary::Byte(255) });
         
 		BasicCanvas(const BasicCanvas&) = default;
 		BasicCanvas(BasicCanvas&&) = default;
@@ -29,12 +31,12 @@ namespace BitmapGraphics
         int getWidth() const override { return myWidth; }
         int getHeight() const override { return myHeight; }       		
 		
-		HBitmapIterator createBitmapIterator() override;
+		HBitmapIterator createBitmapIterator() override;		
         
     private:
 		int myWidth{ 0 };
         int myHeight{ 0 };
-		std::map<std::pair<VG::Point, VG::Point>, Color> myCanvas;
+		std::map<VG::Point, Color> myCanvas;
 		Color backgroundColor;
     };   
 }

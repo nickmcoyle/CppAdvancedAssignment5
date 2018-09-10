@@ -93,7 +93,7 @@ namespace Binary
         bool operator!=(const SizedWord& rhs) const noexcept { return !(operator==(rhs)); }
 
         operator WordSize() const { return myData; }		
-		operator int() const { return myData; }
+		//operator int() const { return myData; }
 	
 		SizedWord& operator=(unsigned char other) { this->myData = other; return *this; };
 

@@ -13,9 +13,9 @@ namespace Framework
     public:
         Scene(const int& width, const int& height);
         
-        using LayerIterator = LayerCollection::const_iterator;
-        
 		void draw(const BitmapGraphics::HCanvas& canvas);
+
+        using LayerIterator = LayerCollection::const_iterator;
 
         void pushBack(const Layer& layer);
         void remove(const Layer& layer);
