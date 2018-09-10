@@ -30,5 +30,8 @@ namespace VG
 	bool operator<(const Point& lhs, const Point& rhs);
 	bool operator>(const Point& lhs, const Point& rhs);
 
+	bool operator<=(const Point& lhs, const Point& rhs);
+	bool operator>=(const Point& lhs, const Point& rhs);
+
     std::ostream& operator<<(std::ostream& os, const Point& p);
 }

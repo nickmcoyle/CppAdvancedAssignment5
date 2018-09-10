@@ -3,20 +3,19 @@
 namespace BitmapGraphics
 {
 		
-	BasicCanvas::BasicCanvas(int width, int height, Color bgColor) : 
+	BasicCanvas::BasicCanvas(int width, int height, Color bgColor) :
 	myWidth{ width },
 	myHeight{ height },
-	backgroundColor{ bgColor } 
+	backgroundColor{ bgColor },
+	myBitmap {myWidth, myHeight}
 	{
-		int y = myHeight - 1;
-		int x = 0;
+		int y = myHeight - 1, x = 0;
 		
 		while (y >= 0)
 		{
 			while (x < myWidth)
-			{
-				VG::Point location(x, y);				
-				myCanvas[location] = backgroundColor;
+			{								
+				myCanvas[VG::Point(x,y)] = backgroundColor;
 				++x;
 			}
 			x = 0;
@@ -28,10 +27,9 @@ namespace BitmapGraphics
 	{
 		if (location.getX() > myWidth || location.getY() > myHeight)
 		{
-			throw std::invalid_argument("Point is out invalid for Canvas");
+			throw std::invalid_argument("The Point (" + std::string(std::to_string(location.getX())) + "," + std::string(std::to_string(location.getY())) + ") is invalid for this Canvas. Index out of range.");
 		}
-
-		//myCanvas.insert(std::pair<VG::Point, Color>(location, color));
+		
 		myCanvas[location] = color;
 	}
 
@@ -43,12 +41,12 @@ namespace BitmapGraphics
 		{
 			return it->second;
 		}
-		throw std::runtime_error("Invalid point passed to getPixelColor method");
+		throw std::runtime_error("Invalid point (" + std::string(std::to_string(location.getX())) + "," + std::string(std::to_string(location.getY())) + ") passed to getPixelColor method");
 	}	
 
 	HBitmapIterator BasicCanvas::createBitmapIterator()
 	{		
-		auto hBitmap = std::make_shared<Bitmap>(Bitmap(myWidth,myHeight));
+		//auto hBitmap = std::make_shared<Bitmap>(Bitmap(myWidth,myHeight));		
 		
 		std::map<VG::Point, Color>::const_iterator it;
 		
@@ -57,13 +55,14 @@ namespace BitmapGraphics
 		for (it = myCanvas.begin(); it != myCanvas.end(); ++it) 
 		{		
 			sl.emplace_back(it->second);
-			if (it->first.getX() == myWidth)
+			if (it->first.getX() == myWidth-1)
 			{
-				hBitmap->addScanLine(sl);
+				//hBitmap->addScanLine(sl);
+				myBitmap.addScanLine(sl);
 				sl.clear();
 			}
 		}
 
-		return std::make_unique<BitmapGraphics::BitmapIterator>(*hBitmap);
+		return std::make_unique<BitmapIterator>(myBitmap);
 	}
 }

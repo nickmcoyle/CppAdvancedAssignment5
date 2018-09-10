@@ -22,7 +22,7 @@ namespace VG
 
 	bool operator<(const Point& lhs, const Point& rhs)
 	{		
-		return std::make_pair(lhs.getX(), lhs.getY()) < std::make_pair(rhs.getX(), rhs.getY());
+		return std::make_pair(lhs.getY(), lhs.getX()) < std::make_pair(rhs.getY(), rhs.getX());
 	}
 
 	bool operator>(const Point& lhs, const Point& rhs)
@@ -30,4 +30,13 @@ namespace VG
 		return ! (lhs < rhs);
 	}
 
+	bool operator<=(const Point& lhs, const Point& rhs)
+	{
+		return (std::make_pair(lhs.getX(), lhs.getY()) < std::make_pair(rhs.getX(), rhs.getY()) || lhs == rhs);
+	}
+
+	bool operator>=(const Point& lhs, const Point& rhs)
+	{
+		return (std::make_pair(lhs.getX(), lhs.getY()) > std::make_pair(rhs.getX(), rhs.getY()) || lhs == rhs);
+	}
 }

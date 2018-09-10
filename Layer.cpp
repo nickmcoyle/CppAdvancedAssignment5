@@ -14,7 +14,21 @@ namespace Framework
 
     void Layer::remove(const PlacedGraphic& placedGraphic)
     {
-        myGraphics.remove(placedGraphic);
+		PlacedGraphicIterator it = myGraphics.begin();
+
+		while (it != myGraphics.end())
+		{
+			if ((*it) == placedGraphic)
+			{
+				myGraphics.erase(it);
+				return;
+			}
+			else
+			{
+				it++;
+			}
+		}
+		throw std::invalid_argument("the placed graphic to remove does not appear in the layer.");
     }
     
     Layer::PlacedGraphicIterator Layer::begin() const

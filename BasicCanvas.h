@@ -7,6 +7,7 @@
 #include "BitmapIterator.h"
 #include <list>
 #include <map>
+#include <string>
 
 namespace BitmapGraphics
 {
@@ -38,5 +39,6 @@ namespace BitmapGraphics
         int myHeight{ 0 };
 		std::map<VG::Point, Color> myCanvas;
 		Color backgroundColor;
+		Bitmap myBitmap;
     };   
 }
