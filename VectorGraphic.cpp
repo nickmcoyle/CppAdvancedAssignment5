@@ -95,4 +95,11 @@ namespace VG
     {
         return ! (*this == rhs);
     }	
+	
+	std::ostream& operator<<(std::ostream& os, const VectorGraphic& vectorGraphic)
+	{
+		os << vectorGraphic.getWidth() << vectorGraphic.getHeight();
+		//vectorGraphic.write(os);
+		return os;
+	}
 }

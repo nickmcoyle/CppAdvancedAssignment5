@@ -26,7 +26,7 @@ namespace Framework
         const VG::Point& getPlacementPoint() const;
         
         void setGraphic(const VG::HVectorGraphic graphic);
-        const VG::HVectorGraphic getGraphic() const;
+        const VG::HVectorGraphic getGraphic() const;		
         
     private:
         VG::Point myPlacementPoint;
