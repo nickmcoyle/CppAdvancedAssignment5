@@ -11,6 +11,7 @@ namespace VG
 
 	void VectorGraphic::draw(const Point& upperLeftOrigin, const BitmapGraphics::HCanvas& canvas)
 	{
+
 	}
     
     bool VectorGraphic::isOpen() const

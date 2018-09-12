@@ -20,7 +20,7 @@ namespace Framework
 		Layer& operator=(const Layer&) = default;
 		Layer& operator=(Layer&&) = default;
         
-		void draw(const BitmapGraphics::HCanvas& canvas);
+		void draw(const BitmapGraphics::HCanvas& canvas) const;
 
         using PlacedGraphicIterator = PlacedGraphicCollection::const_iterator;
         

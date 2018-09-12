@@ -179,6 +179,9 @@
     <ClInclude Include="SceneReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Pen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BasicCanvasTest.cpp">
@@ -302,6 +305,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BasicCanvas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

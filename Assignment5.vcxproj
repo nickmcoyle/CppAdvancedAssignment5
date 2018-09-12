@@ -149,6 +149,7 @@
     <ClInclude Include="LineIterator.h" />
     <ClInclude Include="narrow_cast.h" />
     <ClInclude Include="Parse.h" />
+    <ClInclude Include="Pen.h" />
     <ClInclude Include="PlacedGraphic.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="ranged_number.h" />
@@ -192,6 +193,7 @@
     <ClCompile Include="LineIterator.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Parse.cpp" />
+    <ClCompile Include="Pen.cpp" />
     <ClCompile Include="PlacedGraphic.cpp" />
     <ClCompile Include="PlacedGraphicTest.cpp" />
     <ClCompile Include="Point.cpp" />

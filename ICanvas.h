@@ -6,11 +6,8 @@
 #include <memory>
 
 namespace BitmapGraphics
-{   
-	class ICanvas;
-	using HCanvas = std::shared_ptr<ICanvas>;
-
-    class ICanvas
+{   		
+	class ICanvas
     {
     public:
 		ICanvas() = default;
@@ -28,4 +25,6 @@ namespace BitmapGraphics
 
 		virtual HBitmapIterator createBitmapIterator() = 0;
     };
+
+	using HCanvas = std::shared_ptr<ICanvas>;
 }

@@ -13,7 +13,7 @@ namespace Framework
     public:
         Scene(const int& width, const int& height);
         
-		void draw(const BitmapGraphics::HCanvas& canvas);
+		void draw(const BitmapGraphics::HCanvas& canvas) const;
 
         using LayerIterator = LayerCollection::const_iterator;
 

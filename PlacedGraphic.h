@@ -20,6 +20,8 @@ namespace Framework
 		PlacedGraphic & operator=(const PlacedGraphic&) = default;
 		PlacedGraphic & operator=(PlacedGraphic&&) = default;			
         
+		void draw(const BitmapGraphics::HCanvas& canvas) const;
+
         void setPlacementPoint(const VG::Point& placement);
 		void setPlacementPoint(VG::Point&& placement);
 

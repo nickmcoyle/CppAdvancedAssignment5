@@ -3,6 +3,7 @@
 #include "Color.h"
 #include "ICanvas.h"
 #include "IPen.h"
+#include <memory>
 
 namespace BitmapGraphics
 {    
@@ -23,6 +24,8 @@ namespace BitmapGraphics
 		virtual void setColor(const Color& color) = 0;
 		virtual Color getColor() const = 0;
 
-		virtual HPen createPen(HCanvas const& canvas) = 0;
+		virtual BitmapGraphics::HPen createPen(const BitmapGraphics::HCanvas& canvas) = 0;
     };
+
+	using HStroke = std::shared_ptr<IStroke>;
 }

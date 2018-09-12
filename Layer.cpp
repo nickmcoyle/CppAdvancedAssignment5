@@ -8,8 +8,12 @@ namespace Framework
     {
     }
     
-	void Layer::draw(const BitmapGraphics::HCanvas& canvas)
+	void Layer::draw(const BitmapGraphics::HCanvas& canvas) const
 	{
+		for (const auto& placedGraphic : myGraphics)
+		{
+			placedGraphic.draw(canvas);
+		}
 	}
 
     void Layer::remove(const PlacedGraphic& placedGraphic)

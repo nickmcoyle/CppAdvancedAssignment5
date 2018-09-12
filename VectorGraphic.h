@@ -2,6 +2,7 @@
 
 #include "Point.h"
 #include "ICanvas.h"
+#include "IStroke.h"
 #include <vector>
 #include <memory>
 
@@ -49,6 +50,8 @@ namespace VG
 		Points myPath;
 
 		enum class ShapeStyle { Open, Closed } myShapeStyle;
+
+		BitmapGraphics::HStroke myStroke;
 	};
 
 	std::ostream& operator<<(std::ostream& os, const VectorGraphic& vectorGraphic);

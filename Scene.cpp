@@ -9,8 +9,12 @@ namespace Framework
     {
     }
 
-	void Scene::draw(const BitmapGraphics::HCanvas& canvas)
+	void Scene::draw(const BitmapGraphics::HCanvas& canvas) const
 	{
+		for (const auto& layer : myLayers)
+		{
+			layer.draw(canvas);
+		}
 	}
     
     void Scene::pushBack(const Layer& layer)

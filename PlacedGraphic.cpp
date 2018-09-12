@@ -14,6 +14,11 @@ namespace Framework
 		myGraphic{ graphic }
     {
     }
+
+	void PlacedGraphic::draw(const BitmapGraphics::HCanvas& canvas) const
+	{		
+			myGraphic->draw(myPlacementPoint, canvas);		
+	}
     
     void PlacedGraphic::setPlacementPoint(const VG::Point& placement)
     {

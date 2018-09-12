@@ -3,6 +3,7 @@
 #include "XmlInterfaces.h"
 #include "VectorGraphic.h"
 #include <sstream>
+#include <string>
 
 namespace
 {
@@ -33,9 +34,24 @@ namespace
             throw std::runtime_error("Invalid VectorGraphic attribute");
         }
         
-        Xml::ElementCollection points = vgElement->getChildElements();
+		Xml::HElement stroke = vgElement->getChildElements()[0];
+		if (stroke->getName() != "Stroke")
+		{
+			throw std::runtime_error("Stroke tag missing or invalid");
+		}
+
+		std::string tip = stroke->getAttribute("tip");
+		std::string size = stroke->getAttribute("size");
+		std::string color = stroke->getAttribute("color");
+
+		//instantiate stroke based on tip
+		//vg->setStroke();
+
+        Xml::ElementCollection points = vgElement->getChildElements(); //going to include the stroke tag
+		
+
         Xml::ElementCollection::const_iterator p;
-        for (p = points.begin(); p != points.end(); ++p)
+        for (p = points.begin()+1; p != points.end(); ++p)
         {
             int x = toInt((*p)->getAttribute("x"));
             int y = toInt((*p)->getAttribute("y"));
