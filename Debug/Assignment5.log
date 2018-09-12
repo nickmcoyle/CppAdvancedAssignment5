@@ -1,48 +1,27 @@
-﻿  XmlReaderTest.cpp
-  XmlReader.cpp
-  XmlFactories.cpp
-  WindowsBitmapHeaderTest.cpp
-  WindowsBitmapHeader.cpp
-  WindowsBitmapEncoder.cpp
-  WindowsBitmapDecoder.cpp
-  VerifyEqualityTest.cpp
-  VectorGraphicTest.cpp
-  VectorGraphic.cpp
-  tinyxml2.cpp
-  TestResult.cpp
-  TestRegistry.cpp
-  Test.cpp
-  SceneTest.cpp
-  SceneReaderTest.cpp
-  SceneReader.cpp
-  Scene.cpp
-  ranged_numberTest.cpp
-  PointTest.cpp
-  Generating Code...
-  Compiling...
-  Point.cpp
-  PlacedGraphicTest.cpp
-  PlacedGraphic.cpp
-  Pen.cpp
-  Parse.cpp
-  Main.cpp
-  LineIterator.cpp
-  LayerTest.cpp
-  Layer.cpp
-  Failure.cpp
-  Element.cpp
-  ColorInversionDecorator.cpp
-  Color.cpp
-  CodecLibraryTest.cpp
-  CodecLibrary.cpp
-  BrightnessDecorator.cpp
-  BitmapIteratorDecorator.cpp
-  BitmapIterator.cpp
-  Bitmap.cpp
-  BinaryTest.cpp
-  Generating Code...
-  Compiling...
+﻿  BasicCanvas.cpp
   BasicCanvasTest.cpp
-  BasicCanvas.cpp
+  Bitmap.cpp
+  BitmapIterator.cpp
+  BitmapIteratorDecorator.cpp
+  BrightnessDecorator.cpp
+  Color.cpp
+  ColorInversionDecorator.cpp
+  ColorTest.cpp
+  Layer.cpp
+  LayerTest.cpp
+  Pen.cpp
+  PlacedGraphic.cpp
+  PlacedGraphicTest.cpp
+  Scene.cpp
+  SceneReader.cpp
+  SceneReaderTest.cpp
+  SceneTest.cpp
+  VectorGraphic.cpp
+  VectorGraphicTest.cpp
   Generating Code...
-  Assignment5.vcxproj -> C:\Users\ncoyle\Downloads\c++ class files\CppAssign5-master\Debug\Assignment5.exe
+  Compiling...
+  WindowsBitmapDecoder.cpp
+  WindowsBitmapEncoder.cpp
+  XmlReaderTest.cpp
+  Generating Code...
+  Assignment5.vcxproj -> C:\Users\Nick Coyle\Documents\Education\C++UW\UW C++\C++ Advanced\Assignment5\Debug\Assignment5.exe

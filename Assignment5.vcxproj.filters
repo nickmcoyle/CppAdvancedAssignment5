@@ -182,6 +182,12 @@
     <ClInclude Include="Pen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Stroke.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SlashStroke.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BasicCanvasTest.cpp">
@@ -308,6 +314,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Pen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

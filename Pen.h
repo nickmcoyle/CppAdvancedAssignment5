@@ -11,7 +11,7 @@ namespace BitmapGraphics
 	{
 	public:
 		Pen() = default;
-		Pen(HStroke stroke);
+		Pen(const HStroke& stroke, const HCanvas& canvas);
 
 		virtual ~Pen() = default;
 
@@ -20,9 +20,10 @@ namespace BitmapGraphics
 		Pen(Pen&&) = delete;
 		Pen& operator=(Pen&&) = delete;
 
-		void drawPoint(VG::Point const& point) override;
+		void drawPoint(const VG::Point& point) override;
 
 	private:
 		HStroke myStroke;
+		HCanvas myCanvas;
 	};
 }

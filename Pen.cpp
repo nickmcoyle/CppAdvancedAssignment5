@@ -3,14 +3,15 @@
 namespace BitmapGraphics
 {
 
-	Pen::Pen(HStroke stroke) :
-	myStroke(stroke)
+	Pen::Pen(const HStroke& stroke, const HCanvas& canvas) :
+	myStroke(stroke),
+	myCanvas(canvas)
 	{
 	}
 
-	void Pen::drawPoint(VG::Point const& point)
+	void Pen::drawPoint(const VG::Point& point)
 	{
-		
+		myCanvas->setPixelColor(point, myStroke->getColor());
 	}
 
 }

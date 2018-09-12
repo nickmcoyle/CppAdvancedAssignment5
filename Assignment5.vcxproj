@@ -156,7 +156,9 @@
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneReader.h" />
     <ClInclude Include="SizedWord.h" />
+    <ClInclude Include="SlashStroke.h" />
     <ClInclude Include="SquareStroke.h" />
+    <ClInclude Include="Stroke.h" />
     <ClInclude Include="Test.h" />
     <ClInclude Include="TestHarness.h" />
     <ClInclude Include="TestRegistry.h" />
@@ -186,6 +188,7 @@
     <ClCompile Include="CodecLibraryTest.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="ColorInversionDecorator.cpp" />
+    <ClCompile Include="ColorTest.cpp" />
     <ClCompile Include="Element.cpp" />
     <ClCompile Include="Failure.cpp" />
     <ClCompile Include="Layer.cpp" />

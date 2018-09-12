@@ -14,8 +14,7 @@ namespace BitmapGraphics
 	class BasicCanvas : public ICanvas
 	{
 	public:
-		BasicCanvas() = default;
-		//BasicCanvas(int width, int height) : myWidth{width}, myHeight{height} { }
+		BasicCanvas() = default;		
 		BasicCanvas(int width, int height, Color bgColor = Color{ Binary::Byte(255),Binary::Byte(255),Binary::Byte(255) });
         
 		BasicCanvas(const BasicCanvas&) = default;

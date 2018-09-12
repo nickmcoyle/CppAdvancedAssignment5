@@ -2,6 +2,10 @@
 #include "Scene.h"
 #include "XmlInterfaces.h"
 #include "VectorGraphic.h"
+#include "IStroke.h"
+//#include "SquareStroke.h"
+//#include "SlashStroke.h"
+#include "Color.h"
 #include <sstream>
 #include <string>
 
@@ -33,26 +37,39 @@ namespace
         {
             throw std::runtime_error("Invalid VectorGraphic attribute");
         }
-        
-		Xml::HElement stroke = vgElement->getChildElements()[0];
-		if (stroke->getName() != "Stroke")
+       
+		Xml::HElement strokeElement = vgElement->getChildElements()[0];
+		if (strokeElement->getName() != "Stroke")
 		{
 			throw std::runtime_error("Stroke tag missing or invalid");
 		}
-
-		std::string tip = stroke->getAttribute("tip");
-		std::string size = stroke->getAttribute("size");
-		std::string color = stroke->getAttribute("color");
-
-		//instantiate stroke based on tip
-		//vg->setStroke();
-
-        Xml::ElementCollection points = vgElement->getChildElements(); //going to include the stroke tag
 		
+		std::string tip = strokeElement->getAttribute("tip");
+		int size = toInt(strokeElement->getAttribute("size"));
+		BitmapGraphics::Color color = BitmapGraphics::Color::toColor(strokeElement->getAttribute("color"));
+		/*
+		if (tip == "square")
+		{
+			BitmapGraphics::HStroke stroke = std::make_shared<BitmapGraphics::SquareStroke>(tip, size, color);
+			vg->setStroke(stroke);
+		}
+		else if (tip == "slash")
+		{
+			BitmapGraphics::HStroke stroke = std::make_shared<BitmapGraphics::SlashStroke>(tip, size, color);
+			vg->setStroke(stroke);
+		}
+		*/
+				
+		
+        Xml::ElementCollection points = vgElement->getChildElements(); //going to include the stroke tag		
 
         Xml::ElementCollection::const_iterator p;
-        for (p = points.begin()+1; p != points.end(); ++p)
+        for (p = points.begin(); p != points.end(); ++p)
         {
+			if ((*p)->getName() == "Stroke")
+			{
+				continue;
+			}
             int x = toInt((*p)->getAttribute("x"));
             int y = toInt((*p)->getAttribute("y"));
 			vg->addPoint(VG::Point(x, y));

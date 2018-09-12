@@ -45,9 +45,7 @@ namespace BitmapGraphics
 	}	
 
 	HBitmapIterator BasicCanvas::createBitmapIterator()
-	{		
-		//auto hBitmap = std::make_shared<Bitmap>(Bitmap(myWidth,myHeight));		
-		
+	{			
 		std::map<VG::Point, Color>::const_iterator it;
 		
 		BitmapGraphics::Bitmap::ScanLine sl;
@@ -56,8 +54,7 @@ namespace BitmapGraphics
 		{		
 			sl.emplace_back(it->second);
 			if (it->first.getX() == myWidth-1)
-			{
-				//hBitmap->addScanLine(sl);
+			{				
 				myBitmap.addScanLine(sl);
 				sl.clear();
 			}

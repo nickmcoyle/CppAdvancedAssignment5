@@ -23,6 +23,11 @@ namespace VG
 
 		void draw(const Point& upperLeftOrigin, const BitmapGraphics::HCanvas& canvas);
 
+		void setStroke(const BitmapGraphics::HStroke& stroke)
+		{
+			myStroke = stroke;
+		}
+
 		template<class C> void addPoint(C&& p)
 		{
 			myPath.emplace_back(std::forward<C>(p));
