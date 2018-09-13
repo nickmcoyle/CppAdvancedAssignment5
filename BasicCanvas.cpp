@@ -15,7 +15,9 @@ namespace BitmapGraphics
 		{
 			while (x < myWidth)
 			{								
-				myCanvas[VG::Point(x,y)] = backgroundColor;
+				//myCanvas[VG::Point(x, y)] = backgroundColor;
+				myCanvas.emplace(std::move(VG::Point(x,y)), std::move(backgroundColor));
+				//myCanvas.insert(std::pair<VG::Point, Color>(VG::Point(x, y), backgroundColor));
 				++x;
 			}
 			x = 0;
@@ -52,7 +54,7 @@ namespace BitmapGraphics
 		
 		for (it = myCanvas.begin(); it != myCanvas.end(); ++it) 
 		{		
-			sl.emplace_back(it->second);
+			sl.emplace_back(std::move(it->second));
 			if (it->first.getX() == myWidth-1)
 			{				
 				myBitmap.addScanLine(sl);

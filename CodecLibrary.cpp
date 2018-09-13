@@ -57,7 +57,7 @@ namespace BitmapGraphics
     
     HBitmapEncoder CodecLibrary::createEncoder(
 		const std::string& mimeType,
-		HBitmapIterator bitmapIterator)
+		HBitmapIterator& bitmapIterator)
     {
         for (const auto& encoder : myEncoders)
         {

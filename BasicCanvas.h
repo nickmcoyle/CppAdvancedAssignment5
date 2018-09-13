@@ -15,7 +15,7 @@ namespace BitmapGraphics
 	{
 	public:
 		BasicCanvas() = default;		
-		BasicCanvas(int width, int height, Color bgColor = Color{ Binary::Byte(255),Binary::Byte(255),Binary::Byte(255) });
+		BasicCanvas(int width, int height, Color bgColor);
         
 		BasicCanvas(const BasicCanvas&) = default;
 		BasicCanvas(BasicCanvas&&) = default;

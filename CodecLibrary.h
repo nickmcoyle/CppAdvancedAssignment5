@@ -23,7 +23,7 @@ namespace BitmapGraphics
 
 		HBitmapEncoder createEncoder(
 			const std::string& mimeType,
-			HBitmapIterator bitmapIterator);
+			HBitmapIterator& bitmapIterator);
 
 	private:
 		std::list<HBitmapEncoder> myEncoders;

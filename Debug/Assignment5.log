@@ -1,27 +1,34 @@
-﻿  BasicCanvas.cpp
-  BasicCanvasTest.cpp
-  Bitmap.cpp
-  BitmapIterator.cpp
-  BitmapIteratorDecorator.cpp
-  BrightnessDecorator.cpp
-  Color.cpp
-  ColorInversionDecorator.cpp
-  ColorTest.cpp
-  Layer.cpp
-  LayerTest.cpp
-  Pen.cpp
-  PlacedGraphic.cpp
-  PlacedGraphicTest.cpp
-  Scene.cpp
-  SceneReader.cpp
-  SceneReaderTest.cpp
-  SceneTest.cpp
-  VectorGraphic.cpp
-  VectorGraphicTest.cpp
+﻿  SceneReaderTest.cpp
+  CodecLibraryTest.cpp
+c:\users\ncoyle\downloads\c++ class files\cppassign5-master\test.h(166): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+  c:\users\ncoyle\downloads\c++ class files\cppassign5-master\codeclibrarytest.cpp(137): note: see reference to function template instantiation 'void check_equal_compare<int,bool>(T,U,TestResult &,const char *,int)' being compiled
+          with
+          [
+              T=int,
+              U=bool
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\memory(2585): error C2280: 'std::unique_ptr<BitmapGraphics::IBitmapIterator,std::default_delete<_Ty>>::unique_ptr(const std::unique_ptr<_Ty,std::default_delete<_Ty>> &)': attempting to reference a deleted function
+          with
+          [
+              _Ty=BitmapGraphics::IBitmapIterator
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\memory(2380): note: see declaration of 'std::unique_ptr<BitmapGraphics::IBitmapIterator,std::default_delete<_Ty>>::unique_ptr'
+          with
+          [
+              _Ty=BitmapGraphics::IBitmapIterator
+          ]
+  c:\users\ncoyle\downloads\c++ class files\cppassign5-master\codeclibrarytest.cpp(183): note: see reference to function template instantiation 'std::unique_ptr<BitmapGraphics::BrightnessDecorator,std::default_delete<_Ty>> std::make_unique<BitmapGraphics::BrightnessDecorator,BitmapGraphics::HBitmapIterator&,int,0>(BitmapGraphics::HBitmapIterator &,int &&)' being compiled
+          with
+          [
+              _Ty=BitmapGraphics::BrightnessDecorator
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\memory(2380): note: 'std::unique_ptr<BitmapGraphics::IBitmapIterator,std::default_delete<_Ty>>::unique_ptr(const std::unique_ptr<_Ty,std::default_delete<_Ty>> &)': function was explicitly deleted
+          with
+          [
+              _Ty=BitmapGraphics::IBitmapIterator
+          ]
+  CodecLibrary.cpp
   Generating Code...
-  Compiling...
-  WindowsBitmapDecoder.cpp
+  Skipping... (no relevant changes detected)
   WindowsBitmapEncoder.cpp
-  XmlReaderTest.cpp
-  Generating Code...
-  Assignment5.vcxproj -> C:\Users\Nick Coyle\Documents\Education\C++UW\UW C++\C++ Advanced\Assignment5\Debug\Assignment5.exe
+  WindowsBitmapDecoder.cpp

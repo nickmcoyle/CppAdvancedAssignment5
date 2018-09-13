@@ -9,6 +9,13 @@ namespace BitmapGraphics
     {
     public:
         BitmapIterator(Bitmap& bitmap);
+
+		BitmapIterator(const BitmapIterator& other) = default;
+		BitmapIterator(BitmapIterator&& other) = default;
+
+		BitmapIterator& operator=(const BitmapIterator&) = default;
+		BitmapIterator& operator=(BitmapIterator&&) = default;
+
         
         void nextScanLine() override;
         bool isEndOfImage() const override;
