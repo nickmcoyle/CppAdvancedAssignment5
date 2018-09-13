@@ -1,7 +1,10 @@
 #pragma once
 
 #include "IProjector.h"
+#include "CodecLibrary.h"
+#include "ICanvas.h"
 #include <list>
+#include <string>
 
 namespace BitmapGraphics
 {
@@ -9,21 +12,22 @@ namespace BitmapGraphics
     {
    
     public:               
-		WindowsBitmapFileProjector() = default;
-        WindowsBitmapFileProjector(int width, int height) : myWidth{width}, myHeight{height} { }
-        
+		WindowsBitmapFileProjector() = default;     
+
+		WindowsBitmapFileProjector(std::string fileName, CodecLibrary codecLibrary);
+
 		WindowsBitmapFileProjector(const WindowsBitmapFileProjector&) = default;
 		WindowsBitmapFileProjector(WindowsBitmapFileProjector&&) = default;
 
+		~WindowsBitmapFileProjector() = default;
+
 		WindowsBitmapFileProjector& operator=(const WindowsBitmapFileProjector&) = default;
-		WindowsBitmapFileProjector& operator=(WindowsBitmapFileProjector&&) = default;        
-        
-        int getWidth() const { return myWidth; }
-        int getHeight() const { return myHeight; }     
-        
+		WindowsBitmapFileProjector& operator=(WindowsBitmapFileProjector&&) = default;       
+
+		void projectCanvas(const HCanvas& canvas) override;       
         
     private:
-		int myWidth{ 0 };
-        int myHeight{ 0 };        
+		CodecLibrary& myCodecLibrary;
+		std::string myFileName;
     };   
 }

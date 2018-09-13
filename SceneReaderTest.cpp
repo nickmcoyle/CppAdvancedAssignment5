@@ -182,16 +182,16 @@ TEST(toBitmap, SceneReader)
     // Create an empty Canvas
     Color backgroundColor(100, 100, 100);
     HCanvas canvas = std::make_shared<BasicCanvas>(scene.getWidth(), scene.getHeight(), backgroundColor);
-    /*
+    
     // Draw the Scene onto the Canvas
     scene.draw(canvas);
-
+	
     // Create a WindowsBitmapFileProjector and give it an output file name to create
     // Also give it the CodecLibrary ("dependency injection").
     CodecLibrarySetup codecLibrary;
     HProjector projector = std::make_shared<WindowsBitmapFileProjector>("output_scene.bmp", codecLibrary);
-    
+	
     // Project the Canvas into the bitmap file
    projector->projectCanvas(canvas);
-   */
+   
 }

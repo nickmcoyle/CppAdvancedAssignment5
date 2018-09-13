@@ -3,12 +3,13 @@
 #include "IBitmapIterator.h"
 #include <memory>
 #include <string>
+#include <iostream>
 
 namespace BitmapGraphics
 {
     class IBitmapEncoder;
     
-    using HBitmapEncoder = std::unique_ptr<IBitmapEncoder>;
+    using HBitmapEncoder = std::shared_ptr<IBitmapEncoder>;
     
     class IBitmapEncoder
     {

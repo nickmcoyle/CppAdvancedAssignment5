@@ -319,6 +319,9 @@
     <ClCompile Include="MyColorTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="WindowsBitmapFileProjector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="test_scene.xml" />

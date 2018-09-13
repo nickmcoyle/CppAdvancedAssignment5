@@ -215,6 +215,7 @@
     <ClCompile Include="VerifyEqualityTest.cpp" />
     <ClCompile Include="WindowsBitmapDecoder.cpp" />
     <ClCompile Include="WindowsBitmapEncoder.cpp" />
+    <ClCompile Include="WindowsBitmapFileProjector.cpp" />
     <ClCompile Include="WindowsBitmapHeader.cpp" />
     <ClCompile Include="WindowsBitmapHeaderTest.cpp" />
     <ClCompile Include="XmlFactories.cpp" />

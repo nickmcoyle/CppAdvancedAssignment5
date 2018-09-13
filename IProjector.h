@@ -1,10 +1,10 @@
 #pragma once
 
-namespace BitmapGraphics
-{    
-	class IProjector;
-	using HProjector = std::shared_ptr<IProjector>;
+#include "ICanvas.h"
+#include <memory>
 
+namespace BitmapGraphics
+{   
     class IProjector
     {
     public:
@@ -18,4 +18,6 @@ namespace BitmapGraphics
     	
 		virtual void projectCanvas(const HCanvas& canvas) = 0;
     };
+
+	using HProjector = std::shared_ptr<IProjector>;
 }

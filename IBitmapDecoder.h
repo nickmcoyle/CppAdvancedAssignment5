@@ -8,7 +8,7 @@ namespace BitmapGraphics
 {
 	class BitmapIteratorDecorator;
 	class IBitmapDecoder;
-    using HBitmapDecoder = std::unique_ptr<IBitmapDecoder>;
+    using HBitmapDecoder = std::shared_ptr<IBitmapDecoder>;
     
     class IBitmapDecoder
     {
