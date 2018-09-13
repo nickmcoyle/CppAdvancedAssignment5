@@ -316,7 +316,7 @@
     <ClCompile Include="Pen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ColorTest.cpp">
+    <ClCompile Include="MyColorTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

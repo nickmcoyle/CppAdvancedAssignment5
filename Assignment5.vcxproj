@@ -188,7 +188,7 @@
     <ClCompile Include="CodecLibraryTest.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="ColorInversionDecorator.cpp" />
-    <ClCompile Include="ColorTest.cpp" />
+    <ClCompile Include="MyColorTest.cpp" />
     <ClCompile Include="Element.cpp" />
     <ClCompile Include="Failure.cpp" />
     <ClCompile Include="Layer.cpp" />
