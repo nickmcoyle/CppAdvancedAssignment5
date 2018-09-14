@@ -28,6 +28,6 @@ namespace BitmapGraphics
         
     private:
 		CodecLibrary myCodecLibrary;
-		const std::string& myFileName;
+		std::string myFileName;
     };   
 }

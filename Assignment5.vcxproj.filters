@@ -182,9 +182,6 @@
     <ClInclude Include="Pen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Stroke.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SlashStroke.h">
       <Filter>Header Files</Filter>
     </ClInclude>

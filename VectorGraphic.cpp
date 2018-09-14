@@ -11,7 +11,12 @@ namespace VG
 
 	void VectorGraphic::draw(const Point& upperLeftOrigin, const BitmapGraphics::HCanvas& canvas)
 	{
-
+		auto pen = myStroke->createPen(canvas);
+		for (const auto& point : myPath)
+		{
+			Point p( (point.getX() + upperLeftOrigin.getX()), (point.getY() + upperLeftOrigin.getY()) );
+			pen->drawPoint(p);
+		}
 	}
     
     bool VectorGraphic::isOpen() const

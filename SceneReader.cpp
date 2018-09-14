@@ -3,8 +3,8 @@
 #include "XmlInterfaces.h"
 #include "VectorGraphic.h"
 #include "IStroke.h"
-//#include "SquareStroke.h"
-//#include "SlashStroke.h"
+#include "SquareStroke.h"
+#include "SlashStroke.h"
 #include "Color.h"
 #include <sstream>
 #include <string>
@@ -47,7 +47,7 @@ namespace
 		std::string tip = strokeElement->getAttribute("tip");
 		int size = toInt(strokeElement->getAttribute("size"));
 		BitmapGraphics::Color color = BitmapGraphics::Color::toColor(strokeElement->getAttribute("color"));
-		/*
+	
 		if (tip == "square")
 		{
 			BitmapGraphics::HStroke stroke = std::make_shared<BitmapGraphics::SquareStroke>(tip, size, color);
@@ -57,9 +57,7 @@ namespace
 		{
 			BitmapGraphics::HStroke stroke = std::make_shared<BitmapGraphics::SlashStroke>(tip, size, color);
 			vg->setStroke(stroke);
-		}
-		*/
-				
+		}					
 		
         Xml::ElementCollection points = vgElement->getChildElements(); //going to include the stroke tag		
 

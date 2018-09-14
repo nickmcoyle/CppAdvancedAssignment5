@@ -11,7 +11,7 @@ namespace BitmapGraphics
 	{
 	public:
 		Pen() = default;
-		Pen(const HStroke& stroke, const HCanvas& canvas);	
+		Pen(const HStroke& stroke, const HCanvas& canvas);
 
 		Pen(const Pen &) = delete;
 		Pen& operator =(Pen const&) = delete;

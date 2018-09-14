@@ -39,4 +39,5 @@ namespace VG
 	{
 		return (std::make_pair(lhs.getX(), lhs.getY()) > std::make_pair(rhs.getX(), rhs.getY()) || lhs == rhs);
 	}
+		
 }
