@@ -14,20 +14,20 @@ namespace BitmapGraphics
     public:               
 		WindowsBitmapFileProjector() = default;     
 
-		WindowsBitmapFileProjector(std::string fileName, CodecLibrary codecLibrary);
+		WindowsBitmapFileProjector(const std::string& fileName, const CodecLibrary& codecLibrary);
 
 		WindowsBitmapFileProjector(const WindowsBitmapFileProjector&) = default;
-		WindowsBitmapFileProjector(WindowsBitmapFileProjector&&) = default;
-
-		~WindowsBitmapFileProjector() = default;
+		WindowsBitmapFileProjector(WindowsBitmapFileProjector&&) = default;		
 
 		WindowsBitmapFileProjector& operator=(const WindowsBitmapFileProjector&) = default;
 		WindowsBitmapFileProjector& operator=(WindowsBitmapFileProjector&&) = default;       
 
+		~WindowsBitmapFileProjector() = default;
+
 		void projectCanvas(const HCanvas& canvas) override;       
         
     private:
-		CodecLibrary& myCodecLibrary;
-		std::string myFileName;
+		CodecLibrary myCodecLibrary;
+		const std::string& myFileName;
     };   
 }

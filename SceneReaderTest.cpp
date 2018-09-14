@@ -189,6 +189,7 @@ TEST(toBitmap, SceneReader)
     // Create a WindowsBitmapFileProjector and give it an output file name to create
     // Also give it the CodecLibrary ("dependency injection").
     CodecLibrarySetup codecLibrary;
+	
     HProjector projector = std::make_shared<WindowsBitmapFileProjector>("output_scene.bmp", codecLibrary);
 	
     // Project the Canvas into the bitmap file

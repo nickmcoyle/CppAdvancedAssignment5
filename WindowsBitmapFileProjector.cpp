@@ -6,7 +6,7 @@
 
 namespace BitmapGraphics
 {		
-	WindowsBitmapFileProjector::WindowsBitmapFileProjector(std::string fileName, CodecLibrary codecLibrary) :
+	WindowsBitmapFileProjector::WindowsBitmapFileProjector(const std::string& fileName, const CodecLibrary& codecLibrary) :
 	myCodecLibrary(codecLibrary), 
 	myFileName(fileName)
 	{
