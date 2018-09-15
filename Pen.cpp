@@ -47,13 +47,8 @@ namespace BitmapGraphics
 			}
 
 			if (tip == "slash")
-			{
-				VG::Point p1((point.getX() - offset), point.getY());
-				VG::Point p2((point.getX() - offset), (point.getY() + offset));
-				VG::Point p3(point.getX(), (point.getY() + offset));
-				points.push_back(p1);
-				points.push_back(p2);
-				points.push_back(p3);
+			{				
+				points.push_back(VG::Point((point.getX() - offset), (point.getY() + offset)));				
 			}
 
 			for (const auto& point : points)
