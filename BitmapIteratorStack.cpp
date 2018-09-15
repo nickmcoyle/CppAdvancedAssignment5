@@ -20,24 +20,22 @@ namespace BitmapGraphics
 		BitmapGraphics::Bitmap::ScanLine sl;
 		
 		while (!other->isEndOfImage())
-		{			
-			if (sl.size() == 798)
-			{
-				int i = 0;
-			}
+		{					
 			if (other->isEndOfScanLine())
 			{
 				myStack.push(sl);
-				sl.clear();				
+				sl.clear();
 				other->nextScanLine();
-			}
-			if (other->isEndOfImage())
-			{
-				continue;
+
+				if (other->isEndOfImage())
+				{
+					continue;
+				}
 			}
 			sl.emplace_back(std::move(other->getColor()));
 			other->nextPixel();			
 		}
+		 
 
 		while (!myStack.empty())
 		{

@@ -11,17 +11,13 @@ namespace BitmapGraphics
 	{
 		int y = myHeight - 1, x = 0;
 		
-		while (y >= 0)
+		for (y; y >= 0; --y)
 		{
-			while (x < myWidth)
-			{								
-				//myCanvas[VG::Point(x, y)] = backgroundColor;
-				myCanvas.emplace(std::move(VG::Point(x,y)), std::move(backgroundColor));
-				//myCanvas.insert(std::pair<VG::Point, Color>(VG::Point(x, y), backgroundColor));
-				++x;
+			for (x; x < myWidth; ++x)
+			{				
+				myCanvas.emplace(std::move(VG::Point(x,y)), std::move(backgroundColor));								
 			}
-			x = 0;
-			--y;
+			x = 0;			
 		}
 	}
 	

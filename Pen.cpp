@@ -15,13 +15,12 @@ namespace BitmapGraphics
 		Color color = myStroke->getColor();
 		std::string tip = myStroke->getTip();
 		int size = myStroke->getSize();
-		//int offset = size / 2;
-		int offset = size;
+		int offset = size / 2;		
 
 		//only draw center point if tip size is odd
 		if (size % 2 != 0)
 		{
-		//	myCanvas->setPixelColor(point, color);
+			myCanvas->setPixelColor(point, color);
 		}
 
 		std::vector<VG::Point> points;
@@ -33,18 +32,28 @@ namespace BitmapGraphics
 				VG::Point p2((point.getX() - offset), point.getY());
 				VG::Point p3(point.getX(), (point.getY() + offset));
 				VG::Point p4(point.getX(), (point.getY() - offset));
+				VG::Point p5((point.getX() + offset), (point.getY() + offset));
+				VG::Point p6((point.getX() - offset), (point.getY() - offset));
+				VG::Point p7((point.getX() + offset), (point.getY() - offset));
+				VG::Point p8((point.getX() - offset), (point.getY() + offset));
 				points.push_back(p1);
-				//points.push_back(p2);
+				points.push_back(p2);
 				points.push_back(p3);
-				//points.push_back(p4);
+				points.push_back(p4);
+				points.push_back(p5);
+				points.push_back(p6);
+				points.push_back(p7);
+				points.push_back(p8);
 			}
 
 			if (tip == "slash")
 			{
-				VG::Point p1((point.getX() + offset), (point.getY() + offset));
-				VG::Point p2((point.getX() - offset), (point.getY() - offset));
+				VG::Point p1((point.getX() - offset), point.getY());
+				VG::Point p2((point.getX() - offset), (point.getY() + offset));
+				VG::Point p3(point.getX(), (point.getY() + offset));
 				points.push_back(p1);
-				//points.push_back(p2);
+				points.push_back(p2);
+				points.push_back(p3);
 			}
 
 			for (const auto& point : points)
