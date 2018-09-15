@@ -2,7 +2,9 @@
 #include "WindowsBitmapEncoder.h"
 #include "WindowsBitmapDecoder.h"
 #include "WindowsBitmapCommon.h"
+#include "BitmapIteratorStack.h"
 #include <fstream>
+#include <memory>
 
 namespace BitmapGraphics
 {		
@@ -21,8 +23,10 @@ namespace BitmapGraphics
 		}
 		
 		auto bitmapIter = canvas->createBitmapIterator();
-		
-		auto encoder = myCodecLibrary.createEncoder(WindowsBitmapMimeType, bitmapIter);
+		Bitmap bitmap(canvas->getHeight(), canvas->getWidth());
+		HBitmapIterator bitmapIterStack = std::make_shared<BitmapIteratorStack>(bitmap, bitmapIter);		
+
+		auto encoder = myCodecLibrary.createEncoder(WindowsBitmapMimeType, bitmapIterStack);
 		
 		encoder->encodeToStream(outputStream);
 		outputStream.close();

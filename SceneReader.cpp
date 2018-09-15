@@ -45,8 +45,18 @@ namespace
 		}
 		
 		std::string tip = strokeElement->getAttribute("tip");
+		if (tip.empty())
+		{
+			throw std::runtime_error("Expected tip");
+		}
+
 		int size = toInt(strokeElement->getAttribute("size"));
-		BitmapGraphics::Color color = BitmapGraphics::Color::toColor(strokeElement->getAttribute("color"));
+		if (size <= 0)
+		{
+			throw std::runtime_error("Expected size");
+		}
+
+		BitmapGraphics::Color color = BitmapGraphics::Color::toColor(strokeElement->getAttribute("color"));		
 	
 		if (tip == "square")
 		{

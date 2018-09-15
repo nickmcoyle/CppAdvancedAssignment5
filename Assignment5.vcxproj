@@ -130,6 +130,7 @@
     <ClInclude Include="Bitmap.h" />
     <ClInclude Include="BitmapIterator.h" />
     <ClInclude Include="BitmapIteratorDecorator.h" />
+    <ClInclude Include="BitmapIteratorStack.h" />
     <ClInclude Include="BrightnessDecorator.h" />
     <ClInclude Include="Byte.h" />
     <ClInclude Include="CodecLibrary.h" />
@@ -182,6 +183,7 @@
     <ClCompile Include="Bitmap.cpp" />
     <ClCompile Include="BitmapIterator.cpp" />
     <ClCompile Include="BitmapIteratorDecorator.cpp" />
+    <ClCompile Include="BitmapIteratorStack.cpp" />
     <ClCompile Include="BrightnessDecorator.cpp" />
     <ClCompile Include="CodecLibrary.cpp" />
     <ClCompile Include="CodecLibraryTest.cpp" />

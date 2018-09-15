@@ -185,6 +185,9 @@
     <ClInclude Include="SlashStroke.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BitmapIteratorStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BasicCanvasTest.cpp">
@@ -317,6 +320,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="WindowsBitmapFileProjector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BitmapIteratorStack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

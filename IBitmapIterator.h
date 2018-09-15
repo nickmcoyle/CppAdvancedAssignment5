@@ -27,5 +27,5 @@ namespace BitmapGraphics
         virtual int getBitmapHeight() const = 0;
     };
     
-    using HBitmapIterator = std::shared_ptr<IBitmapIterator>;
+    using HBitmapIterator = std::shared_ptr<IBitmapIterator>;	
 }

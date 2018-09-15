@@ -1,5 +1,5 @@
 #include "VectorGraphic.h"
-
+#include "LineIterator.h"
 #include <algorithm>
 
 namespace VG
@@ -11,11 +11,38 @@ namespace VG
 
 	void VectorGraphic::draw(const Point& upperLeftOrigin, const BitmapGraphics::HCanvas& canvas)
 	{
+		
 		auto pen = myStroke->createPen(canvas);
-		for (const auto& point : myPath)
+		std::vector<VG::Point>::const_iterator pathIter = myPath.begin();
+		while (pathIter != --myPath.end())
 		{
-			Point p( (point.getX() + upperLeftOrigin.getX()), (point.getY() + upperLeftOrigin.getY()) );
-			pen->drawPoint(p);
+			Point beginPoint( (pathIter->getX() + upperLeftOrigin.getX()), (pathIter->getY() + upperLeftOrigin.getY()) );	
+			auto peek = (pathIter + 1);
+			Point endPoint((peek->getX() + upperLeftOrigin.getX()), (peek->getY() + upperLeftOrigin.getY()));			
+			
+			pen->drawPoint(beginPoint);			
+			pen->drawPoint(endPoint);
+
+			auto lineIter = LineIterator(beginPoint, endPoint);
+			while (!lineIter.isEnd())
+			{
+				pen->drawPoint(lineIter.getCurrentPoint());
+				lineIter.nextPoint();
+			}
+
+			if (peek == --myPath.end() && isClosed())
+			{
+				Point beginPoint( (myPath.begin()->getX() + upperLeftOrigin.getX()), (myPath.begin()->getY() + upperLeftOrigin.getY()) );
+				Point endPoint((peek->getX() + upperLeftOrigin.getX()), (peek->getY() + upperLeftOrigin.getY()));
+				auto lineIter = LineIterator(beginPoint, endPoint);
+				while (!lineIter.isEnd())
+				{
+					pen->drawPoint(lineIter.getCurrentPoint());
+					lineIter.nextPoint();
+				}
+
+			}
+			++pathIter;
 		}
 	}
     

@@ -3,7 +3,6 @@
 #include "IPen.h"
 #include "Point.h"
 #include "IStroke.h"
-#include <memory>
 
 namespace BitmapGraphics
 {	
@@ -24,6 +23,6 @@ namespace BitmapGraphics
 
 	private:
 		HStroke myStroke;
-		HCanvas myCanvas;
+		HCanvas myCanvas;	
 	};
 }

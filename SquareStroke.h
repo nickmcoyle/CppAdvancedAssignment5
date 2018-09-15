@@ -27,11 +27,13 @@ namespace BitmapGraphics
 				
 		~SquareStroke() = default;
 
-		void setSize(int size) { mySize = size; };
-		int getSize() const { return mySize; };
+		void setSize(int size) override { mySize = size; };
+		int getSize() const override { return mySize; };
 
-		void setColor(const Color& color) { myColor = color; };
-		Color getColor() const { return myColor; };
+		void setColor(const Color& color) override { myColor = color; };
+		Color getColor() const override { return myColor; };
+
+		std::string getTip() const override { return myTip; };
 
 		BitmapGraphics::HPen createPen(const BitmapGraphics::HCanvas& canvas) override
 		{			

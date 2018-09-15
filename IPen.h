@@ -16,7 +16,7 @@ namespace BitmapGraphics
 		IPen(IPen&&) = delete;
 		IPen& operator=(IPen&&) = delete;		
     	
-		virtual void drawPoint(VG::Point const& point) = 0;
+		virtual void drawPoint(const VG::Point& point) = 0;
     };
 
 	using HPen = std::shared_ptr<IPen>;
