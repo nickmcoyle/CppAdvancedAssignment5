@@ -9,6 +9,12 @@ namespace BitmapGraphics
     public:
 	    explicit BitmapIteratorDecorator(HBitmapIterator originalIterator);
 
+		BitmapIteratorDecorator(const BitmapIteratorDecorator& other) = default;
+		BitmapIteratorDecorator(BitmapIteratorDecorator&& other) = default;
+
+		BitmapIteratorDecorator& operator=(const BitmapIteratorDecorator&) = default;
+		BitmapIteratorDecorator& operator=(BitmapIteratorDecorator&&) = default;
+		
     	void nextScanLine() override;
         bool isEndOfImage() const override;;
         void nextPixel() override;;

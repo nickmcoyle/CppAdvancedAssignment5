@@ -6,11 +6,10 @@
 #include <iostream>
 
 namespace BitmapGraphics
-{
-    class IBitmapEncoder;
-    
-    using HBitmapEncoder = std::shared_ptr<IBitmapEncoder>;
-    
+{      
+	class IBitmapEncoder;
+	using HBitmapEncoder = std::shared_ptr<IBitmapEncoder>;
+
     class IBitmapEncoder
     {
     public:

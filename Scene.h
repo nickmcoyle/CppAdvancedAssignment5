@@ -12,6 +12,12 @@ namespace Framework
         
     public:
         Scene(const int& width, const int& height);
+
+		Scene(const Scene&) = default;
+		Scene(Scene&& other) = default;
+
+		Scene& operator=(const Scene&) = default;
+		Scene& operator=(Scene&&) = default;
         
 		void draw(const BitmapGraphics::HCanvas& canvas) const;
 

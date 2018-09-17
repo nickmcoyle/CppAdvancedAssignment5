@@ -12,7 +12,7 @@ namespace BitmapGraphics
         
 		WindowsBitmapDecoder(std::istream& sourceStream);
 		
-	    HBitmapDecoder clone(std::istream& sourceStream) override;
+	    HBitmapDecoder clone(std::istream& sourceStream) override;		
         
         HBitmapIterator createIterator() override;
         

@@ -82,7 +82,7 @@ const std::string SceneXml = R"(
 
 
 using namespace BitmapGraphics;
-/*
+
 TEST(ReadScene, SceneReader)
 {
     std::stringstream xmlStream(TestXml);
@@ -144,7 +144,7 @@ TEST(ReadScene, SceneReader)
     // Expect 2 layers
     CHECK_EQUAL(2, numberOfLayers);
 }
-*/
+
 //////////////////
 
 namespace

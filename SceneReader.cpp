@@ -5,6 +5,7 @@
 #include "IStroke.h"
 #include "SquareStroke.h"
 #include "SlashStroke.h"
+#include "RoundStroke.h"
 #include "Color.h"
 #include <sstream>
 #include <string>
@@ -60,14 +61,23 @@ namespace
 	
 		if (tip == "square")
 		{
-			BitmapGraphics::HStroke stroke = std::make_shared<BitmapGraphics::SquareStroke>(tip, size, color);
+			BitmapGraphics::HStroke stroke = std::make_shared<BitmapGraphics::SquareStroke>(size, color);
 			vg->setStroke(stroke);
 		}
 		else if (tip == "slash")
 		{
-			BitmapGraphics::HStroke stroke = std::make_shared<BitmapGraphics::SlashStroke>(tip, size, color);
+			BitmapGraphics::HStroke stroke = std::make_shared<BitmapGraphics::SlashStroke>(size, color);
 			vg->setStroke(stroke);
-		}					
+		}	
+		else if (tip == "round")
+		{
+			BitmapGraphics::HStroke stroke = std::make_shared<BitmapGraphics::RoundStroke>(size, color);
+			vg->setStroke(stroke);
+		}
+		else
+		{
+			throw std::runtime_error("Stroke tip " + tip + " not supported");
+		}
 		
         Xml::ElementCollection points = vgElement->getChildElements(); //going to include the stroke tag		
 

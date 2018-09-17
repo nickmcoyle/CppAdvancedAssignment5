@@ -9,8 +9,7 @@ namespace Framework
     class PlacedGraphic
     {
     public:
-        PlacedGraphic(const VG::Point& placement,
-                      const VG::HVectorGraphic graphic);
+        PlacedGraphic(const VG::Point& placement, const VG::HVectorGraphic graphic);
         
         PlacedGraphic();
 

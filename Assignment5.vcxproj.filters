@@ -41,9 +41,6 @@
     <ClInclude Include="BasicCanvas.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="binary_ostream_iterator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Bitmap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -179,13 +176,22 @@
     <ClInclude Include="SceneReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Pen.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SlashStroke.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BitmapIteratorStack.h">
+    <ClInclude Include="SquarePen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SlashPen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RoundPen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RoundStroke.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicCanvasBitmapIterator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -313,16 +319,28 @@
     <ClCompile Include="BasicCanvas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Pen.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MyColorTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="WindowsBitmapFileProjector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BitmapIteratorStack.cpp">
+    <ClCompile Include="SquarePen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SlashPen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RoundPen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicCanvasBitmapIterator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyStrokeShapeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyRoundStrokeShapeTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

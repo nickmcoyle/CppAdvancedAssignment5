@@ -1,6 +1,7 @@
 #pragma once
 
 #include "IBitmapIterator.h"
+#include "ICanvas.h"
 #include <memory>
 #include <string>
 
@@ -21,8 +22,8 @@ namespace BitmapGraphics
 		IBitmapDecoder(IBitmapDecoder&&) = delete;
 		IBitmapDecoder& operator=(IBitmapDecoder&&) = delete;
 		
-    	virtual HBitmapDecoder clone(std::istream& sourceStream) = 0;
-        
+    	virtual HBitmapDecoder clone(std::istream& sourceStream) = 0;		
+
         virtual HBitmapIterator createIterator() = 0;
         
         virtual std::string getMimeType() const = 0;

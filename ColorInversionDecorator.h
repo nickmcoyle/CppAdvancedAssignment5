@@ -7,8 +7,7 @@ namespace BitmapGraphics
 	class ColorInversionDecorator : public BitmapIteratorDecorator
 	{
 	public:
-		ColorInversionDecorator(
-			HBitmapIterator originalIterator);
+		ColorInversionDecorator(HBitmapIterator originalIterator);
 
 		Color getColor() const override;
 	};

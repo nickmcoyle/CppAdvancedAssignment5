@@ -1,7 +1,7 @@
 #pragma once
 
 #include "IStroke.h"
-#include "Pen.h"
+#include "SquarePen.h"
 #include "ICanvas.h"
 #include "Color.h"
 #include <string>
@@ -11,39 +11,27 @@ namespace BitmapGraphics
 	class SquareStroke : public IStroke
 	{
 	public:
-		SquareStroke(std::string tip, int size, const Color& color) : myTip(tip), mySize(size), myColor(color) {};
+		SquareStroke(int size, const Color& color) :mySize(size), myColor(color) {};
 
-		SquareStroke(const SquareStroke& other) :
-			myTip(other.myTip),
-			mySize(other.mySize),
-			myColor(other.myColor)
-		{			
-		};
-
+		SquareStroke(const SquareStroke& other) = default;
 		SquareStroke(SquareStroke&& other) = default;
 
 		SquareStroke& operator=(const SquareStroke&) = default;
-		SquareStroke& operator=(SquareStroke&&) = default;
-				
-		~SquareStroke() = default;
+		SquareStroke& operator=(SquareStroke&&) = default;		
 
 		void setSize(int size) override { mySize = size; };
 		int getSize() const override { return mySize; };
 
 		void setColor(const Color& color) override { myColor = color; };
 		Color getColor() const override { return myColor; };
-
-		std::string getTip() const override { return myTip; };
-
-		BitmapGraphics::HPen createPen(const BitmapGraphics::HCanvas& canvas) override
+				
+		BitmapGraphics::HPen createPen() override
 		{			
-			HStroke stroke = std::make_shared<SquareStroke>(*this);
-			HPen pen = std::make_shared<Pen>(stroke, canvas);
+			HPen pen = std::make_shared<SquarePen>(mySize, myColor);
 			return pen;
 		};
 
-	private:	
-		std::string myTip;
+	private:			
 		int mySize;
 		Color myColor;	
 	};

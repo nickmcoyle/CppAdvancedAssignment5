@@ -22,11 +22,9 @@ namespace BitmapGraphics
 		virtual int getSize() const = 0;
 
 		virtual void setColor(const Color& color) = 0;
-		virtual Color getColor() const = 0;
+		virtual Color getColor() const = 0;		
 
-		virtual std::string getTip() const = 0;
-
-		virtual BitmapGraphics::HPen createPen(const BitmapGraphics::HCanvas& canvas) = 0;
+		virtual BitmapGraphics::HPen createPen() = 0;
     };
 
 	using HStroke = std::shared_ptr<IStroke>;

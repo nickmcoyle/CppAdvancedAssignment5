@@ -1,7 +1,7 @@
 #pragma once
 
 #include "IStroke.h"
-#include "Pen.h"
+#include "SlashPen.h"
 #include "ICanvas.h"
 #include "Color.h"
 #include <string>
@@ -12,15 +12,9 @@ namespace BitmapGraphics
 	class SlashStroke : public IStroke
 	{
 	public:
-		SlashStroke(const std::string& tip, int size, const Color& color) : myTip(tip), mySize(size), myColor(color) {};
+		SlashStroke(int size, const Color& color) : mySize(size), myColor(color) {};
 
-		SlashStroke(const SlashStroke& other) :
-			myTip(other.myTip),
-			mySize(other.mySize),
-			myColor(other.myColor)
-		{
-		};
-		
+		SlashStroke(const SlashStroke& other) = default;
 		SlashStroke(SlashStroke&& other) = default;
 
 		SlashStroke& operator=(const SlashStroke&) = default;
@@ -31,18 +25,14 @@ namespace BitmapGraphics
 
 		void setColor(const Color& color) override { myColor = color; };
 		Color getColor() const override { return myColor; };
-
-		std::string getTip() const override { return myTip; };
-
-		BitmapGraphics::HPen createPen(const BitmapGraphics::HCanvas& canvas) override
+		
+		BitmapGraphics::HPen createPen() override
 		{
-			HStroke stroke = std::make_shared<SlashStroke>(*this);
-			HPen pen = std::make_shared<Pen>(stroke, canvas);
+			HPen pen = std::make_shared<SlashPen>(mySize, myColor);
 			return pen;
 		};
 
-	private:
-		std::string myTip;
+	private:		
 		int mySize;
 		Color myColor;		
 	};

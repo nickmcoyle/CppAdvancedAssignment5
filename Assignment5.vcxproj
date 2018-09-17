@@ -126,11 +126,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicCanvas.h" />
-    <ClInclude Include="binary_ostream_iterator.h" />
     <ClInclude Include="Bitmap.h" />
     <ClInclude Include="BitmapIterator.h" />
     <ClInclude Include="BitmapIteratorDecorator.h" />
-    <ClInclude Include="BitmapIteratorStack.h" />
+    <ClInclude Include="BasicCanvasBitmapIterator.h" />
     <ClInclude Include="BrightnessDecorator.h" />
     <ClInclude Include="Byte.h" />
     <ClInclude Include="CodecLibrary.h" />
@@ -150,7 +149,10 @@
     <ClInclude Include="LineIterator.h" />
     <ClInclude Include="narrow_cast.h" />
     <ClInclude Include="Parse.h" />
-    <ClInclude Include="Pen.h" />
+    <ClInclude Include="RoundPen.h" />
+    <ClInclude Include="RoundStroke.h" />
+    <ClInclude Include="SlashPen.h" />
+    <ClInclude Include="SquarePen.h" />
     <ClInclude Include="PlacedGraphic.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="ranged_number.h" />
@@ -183,7 +185,7 @@
     <ClCompile Include="Bitmap.cpp" />
     <ClCompile Include="BitmapIterator.cpp" />
     <ClCompile Include="BitmapIteratorDecorator.cpp" />
-    <ClCompile Include="BitmapIteratorStack.cpp" />
+    <ClCompile Include="BasicCanvasBitmapIterator.cpp" />
     <ClCompile Include="BrightnessDecorator.cpp" />
     <ClCompile Include="CodecLibrary.cpp" />
     <ClCompile Include="CodecLibraryTest.cpp" />
@@ -196,8 +198,12 @@
     <ClCompile Include="LayerTest.cpp" />
     <ClCompile Include="LineIterator.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MyRoundStrokeShapeTest.cpp" />
     <ClCompile Include="Parse.cpp" />
-    <ClCompile Include="Pen.cpp" />
+    <ClCompile Include="RoundPen.cpp" />
+    <ClCompile Include="MyStrokeShapeTest.cpp" />
+    <ClCompile Include="SlashPen.cpp" />
+    <ClCompile Include="SquarePen.cpp" />
     <ClCompile Include="PlacedGraphic.cpp" />
     <ClCompile Include="PlacedGraphicTest.cpp" />
     <ClCompile Include="Point.cpp" />

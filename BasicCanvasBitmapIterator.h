@@ -2,24 +2,23 @@
 
 #include "IBitmapIterator.h"
 #include "IBitmapIterator.h"
+#include "ICanvas.h"
 #include "Bitmap.h"
 #include <stack>
 
 namespace BitmapGraphics
 {
-	class BitmapIteratorStack : public IBitmapIterator
+	class BasicCanvasBitmapIterator : public IBitmapIterator
 	{
 	public:
-		BitmapIteratorStack(Bitmap& bitmap);
-		BitmapIteratorStack(Bitmap& bitmap, const HBitmapIterator& other);
+		BasicCanvasBitmapIterator(Bitmap& bitmap);	
 
-		BitmapIteratorStack(const BitmapIteratorStack& other) = default;
-		BitmapIteratorStack(BitmapIteratorStack&& other) = default;			
+		BasicCanvasBitmapIterator(const BasicCanvasBitmapIterator& other) = default;
+		BasicCanvasBitmapIterator(BasicCanvasBitmapIterator&& other) = default;
 
-		BitmapIteratorStack& operator=(const BitmapIteratorStack&) = default;
-		BitmapIteratorStack& operator=(BitmapIteratorStack&&) = default;
-
-
+		BasicCanvasBitmapIterator& operator=(const BasicCanvasBitmapIterator&) = default;
+		BasicCanvasBitmapIterator& operator=(BasicCanvasBitmapIterator&&) = default;
+		
 		void nextScanLine() override;
 		bool isEndOfImage() const override;
 		void nextPixel() override;
@@ -30,7 +29,7 @@ namespace BitmapGraphics
 		int getBitmapHeight() const override;
 
 	private:
-		Bitmap & myBitmap;
+		Bitmap& myBitmap;
 		Bitmap::ScanLineIterator myScanLine;
 		Bitmap::PixelIterator myPixel;
 	};

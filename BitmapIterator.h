@@ -14,9 +14,8 @@ namespace BitmapGraphics
 		BitmapIterator(BitmapIterator&& other) = default;
 
 		BitmapIterator& operator=(const BitmapIterator&) = default;
-		BitmapIterator& operator=(BitmapIterator&&) = default;
+		BitmapIterator& operator=(BitmapIterator&&) = default;		
 
-        
         void nextScanLine() override;
         bool isEndOfImage() const override;
         void nextPixel() override;

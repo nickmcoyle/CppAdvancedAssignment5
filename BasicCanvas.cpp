@@ -9,6 +9,7 @@ namespace BitmapGraphics
 	backgroundColor{ bgColor },
 	myBitmap {myWidth, myHeight}
 	{
+		/////////////// I know this isnt right. I shouldn't have to initialize all the points with the background color, I just can't figure out how to make it work without doing this
 		int y = myHeight - 1, x = 0;
 		
 		for (y; y >= 0; --y)
@@ -19,6 +20,7 @@ namespace BitmapGraphics
 			}
 			x = 0;			
 		}
+		
 	}
 	
 	void BasicCanvas::setPixelColor(const VG::Point& location, const Color& color)
@@ -28,22 +30,30 @@ namespace BitmapGraphics
 			throw std::invalid_argument("The Point (" + std::string(std::to_string(location.getX())) + "," + std::string(std::to_string(location.getY())) + ") is invalid for this Canvas. Index out of range.");
 		}
 		
-		myCanvas[location] = color;
+		myCanvas[location] = color;		
 	}
 
 	Color BasicCanvas::getPixelColor(const VG::Point& location) const
 	{
+		if (location.getX() > myWidth || location.getY() > myHeight)
+		{
+			throw std::runtime_error("Invalid point (" + std::string(std::to_string(location.getX())) + "," + std::string(std::to_string(location.getY())) + ") passed to getPixelColor method");
+		}
+
 		std::map<VG::Point, Color>::const_iterator it;
 		it = myCanvas.find(location);
 		if (it != myCanvas.end())
 		{
 			return it->second;
-		}
-		throw std::runtime_error("Invalid point (" + std::string(std::to_string(location.getX())) + "," + std::string(std::to_string(location.getY())) + ") passed to getPixelColor method");
-	}	
+		}		
 
+		return backgroundColor;			
+	}	
+	
 	HBitmapIterator BasicCanvas::createBitmapIterator()
-	{			
+	{	
+		///////////// I think this should go into a BasicCanvasDecoder but I can't get that to work, so for now this algorithm is here, and this is why the BasicCanvas has to own a Bitmap
+
 		std::map<VG::Point, Color>::const_iterator it;
 		
 		BitmapGraphics::Bitmap::ScanLine sl;
@@ -57,7 +67,7 @@ namespace BitmapGraphics
 				sl.clear();
 			}
 		}
-
-		return std::make_unique<BitmapIterator>(myBitmap);
+		
+		return std::make_unique<BasicCanvasBitmapIterator>(myBitmap);
 	}
 }
