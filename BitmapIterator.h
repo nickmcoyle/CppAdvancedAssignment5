@@ -20,7 +20,7 @@ namespace BitmapGraphics
         bool isEndOfImage() const override;
         void nextPixel() override;
         bool isEndOfScanLine() const override;
-        Color getColor() const override;
+        Color getColor() const override;		
         
         int getBitmapWidth() const override;
         int getBitmapHeight() const override;

@@ -2,7 +2,7 @@
 
 #include "IBitmapIterator.h"
 #include "IBitmapIterator.h"
-#include "ICanvas.h"
+#include "BasicCanvas.h"
 #include "Bitmap.h"
 #include <stack>
 
@@ -11,7 +11,7 @@ namespace BitmapGraphics
 	class BasicCanvasBitmapIterator : public IBitmapIterator
 	{
 	public:
-		BasicCanvasBitmapIterator(Bitmap& bitmap);	
+		BasicCanvasBitmapIterator(const BasicCanvas& canvas);
 
 		BasicCanvasBitmapIterator(const BasicCanvasBitmapIterator& other) = default;
 		BasicCanvasBitmapIterator(BasicCanvasBitmapIterator&& other) = default;
@@ -29,8 +29,7 @@ namespace BitmapGraphics
 		int getBitmapHeight() const override;
 
 	private:
-		Bitmap& myBitmap;
-		Bitmap::ScanLineIterator myScanLine;
-		Bitmap::PixelIterator myPixel;
+		const BasicCanvas& myCanvas;
+		VG::Point myCurrentPoint;		
 	};
 }

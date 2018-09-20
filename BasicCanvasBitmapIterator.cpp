@@ -4,70 +4,58 @@
 namespace BitmapGraphics
 {
 
-	BasicCanvasBitmapIterator::BasicCanvasBitmapIterator(Bitmap& bitmap) :
-	myBitmap{ bitmap },
-	myScanLine{ bitmap.begin() },
-	myPixel{ myScanLine->begin() }
-	{		
-		
-		std::stack<Bitmap::ScanLine> myStack;		
-
-		for (myScanLine; myScanLine != bitmap.end(); ++myScanLine)
-		{
-			myStack.push(*myScanLine);
-		}
-
-		Bitmap flippedBitmap(bitmap.getWidth(), bitmap.getHeight());
-
-		while (!myStack.empty())
-		{				
-			flippedBitmap.addScanLine(myStack.top());
-			myStack.pop();
-		}
-
-		myBitmap = flippedBitmap;
-		myScanLine = bitmap.begin();
-		myPixel = myScanLine->begin();
-
+	BasicCanvasBitmapIterator::BasicCanvasBitmapIterator(const BasicCanvas& canvas) :
+	myCanvas{ canvas },
+	myCurrentPoint{ VG::Point(0,0) }	
+	{	
 	}	
 	
 	void BasicCanvasBitmapIterator::nextScanLine()
-	{
-		++myScanLine;
+	{		
 		if (!isEndOfImage())
 		{
-			myPixel = myScanLine->begin();
+			myCurrentPoint = VG::Point(0, myCurrentPoint.getY() + 1);
 		}
 	}
 
 	bool BasicCanvasBitmapIterator::isEndOfImage() const
 	{
-		return myScanLine == myBitmap.end();
+		return myCurrentPoint.getY() >= myCanvas.getHeight();
 	}
 
 	void BasicCanvasBitmapIterator::nextPixel()
 	{
-		++myPixel;
+		if (!isEndOfImage())
+		{
+			if (isEndOfScanLine())
+			{
+				nextScanLine();
+			}
+			else 
+			{
+				myCurrentPoint = VG::Point(myCurrentPoint.getX() + 1, myCurrentPoint.getY());
+			}
+		}		
 	}
 
 	bool BasicCanvasBitmapIterator::isEndOfScanLine() const
 	{
-		return myPixel == myScanLine->end();
+		return myCurrentPoint.getX() >= myCanvas.getWidth();
 	}
 
 	Color BasicCanvasBitmapIterator::getColor() const
 	{
-		return *myPixel;
+		return myCanvas.getPixelColor(myCurrentPoint);
 	}
 
 	int BasicCanvasBitmapIterator::getBitmapWidth() const
 	{
-		return myBitmap.getWidth();
+		return myCanvas.getWidth();
 	}
 
 	int BasicCanvasBitmapIterator::getBitmapHeight() const
 	{
-		return myBitmap.getHeight();
+		return myCanvas.getHeight();
 	}
 
 }

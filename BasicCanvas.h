@@ -4,7 +4,6 @@
 #include "Point.h"
 #include "Color.h"
 #include "Bitmap.h"
-#include "BasicCanvasBitmapIterator.h"
 #include <map>
 #include <string>
 
@@ -33,9 +32,8 @@ namespace BitmapGraphics
         
     private:
 		int myWidth{ 0 };
-        int myHeight{ 0 };
+        int myHeight{ 0 };		
+		Color myBackgroundColor;
 		PixelMap myCanvas;
-		Color backgroundColor;
-		Bitmap myBitmap;
     };   
 }

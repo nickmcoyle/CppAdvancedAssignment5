@@ -26,8 +26,8 @@ namespace BitmapGraphics
 
 		void projectCanvas(const HCanvas& canvas) override;       
         
-    private:
-		CodecLibrary myCodecLibrary;
+    private:		
 		std::string myFileName;
+		CodecLibrary myCodecLibrary;
     };   
 }

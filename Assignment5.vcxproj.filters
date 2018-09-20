@@ -194,6 +194,12 @@
     <ClInclude Include="BasicCanvasBitmapIterator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GrayScaleConversionDecorator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PosterizeDecorator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BasicCanvasTest.cpp">
@@ -341,6 +347,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MyRoundStrokeShapeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyDecoratorTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

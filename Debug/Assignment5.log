@@ -1,62 +1,7 @@
-﻿  BasicCanvas.cpp
-  BasicCanvasTest.cpp
-  BinaryTest.cpp
-  Bitmap.cpp
-  BitmapIterator.cpp
-  BitmapIteratorDecorator.cpp
-  BasicCanvasBitmapIterator.cpp
-  BrightnessDecorator.cpp
-  CodecLibrary.cpp
-  CodecLibraryTest.cpp
-c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\test.h(166): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
-  c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\codeclibrarytest.cpp(137): note: see reference to function template instantiation 'void check_equal_compare<int,bool>(T,U,TestResult &,const char *,int)' being compiled
-          with
-          [
-              T=int,
-              U=bool
-          ]
-  Color.cpp
-  ColorInversionDecorator.cpp
-  MyColorTest.cpp
-  Element.cpp
-  Failure.cpp
-  Layer.cpp
-  LayerTest.cpp
-  LineIterator.cpp
-  Main.cpp
-  MyRoundStrokeShapeTest.cpp
-  Generating Code...
-  Compiling...
-  Parse.cpp
-  RoundPen.cpp
-  MyStrokeShapeTest.cpp
-  SlashPen.cpp
-  SquarePen.cpp
-  PlacedGraphic.cpp
-  PlacedGraphicTest.cpp
-  Point.cpp
-  PointTest.cpp
-  ranged_numberTest.cpp
-  Scene.cpp
-  SceneReader.cpp
-  SceneReaderTest.cpp
-  SceneTest.cpp
-  Test.cpp
-  TestRegistry.cpp
-  TestResult.cpp
-  tinyxml2.cpp
-  VectorGraphic.cpp
-  VectorGraphicTest.cpp
-  Generating Code...
-  Compiling...
-  VerifyEqualityTest.cpp
-  WindowsBitmapDecoder.cpp
-  WindowsBitmapEncoder.cpp
-  WindowsBitmapFileProjector.cpp
-  WindowsBitmapHeader.cpp
-  WindowsBitmapHeaderTest.cpp
-  XmlFactories.cpp
-  XmlReader.cpp
-  XmlReaderTest.cpp
-  Generating Code...
+﻿  MyDecoratorTest.cpp
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\posterizedecorator.h(30): warning C4172: returning address of local variable or temporary
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\posterizedecorator.h(35): warning C4172: returning address of local variable or temporary
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\posterizedecorator.h(40): warning C4172: returning address of local variable or temporary
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\posterizedecorator.h(45): warning C4172: returning address of local variable or temporary
+c:\users\nick coyle\documents\education\c++uw\uw c++\c++ advanced\assignment5\posterizedecorator.h(47): warning C4172: returning address of local variable or temporary
   Assignment5.vcxproj -> C:\Users\Nick Coyle\Documents\Education\C++UW\UW C++\C++ Advanced\Assignment5\Debug\Assignment5.exe

@@ -3,9 +3,8 @@
 
 namespace BitmapGraphics
 {
-	ColorInversionDecorator::ColorInversionDecorator(
-		HBitmapIterator originalIterator)
-		: BitmapIteratorDecorator{ std::move(originalIterator) }
+	ColorInversionDecorator::ColorInversionDecorator(HBitmapIterator originalIterator) :
+	BitmapIteratorDecorator{ std::move(originalIterator) }
 	{
 	}
 
